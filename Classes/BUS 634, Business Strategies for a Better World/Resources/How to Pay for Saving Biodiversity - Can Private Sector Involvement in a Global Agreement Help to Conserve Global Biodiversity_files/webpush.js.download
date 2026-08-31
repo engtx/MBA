@@ -1,0 +1,670 @@
+// Webpush.js, 16 Sept 2025
+
+const WPsettings = {
+    minPageviews: 3,
+    delayScheduleDays: [0, 3, 7, 30],
+    declineCooldownSeconds: 86400,
+    slideoutWaittime: 5000, // seconds in thousandths (ticks)
+    minTagsforFullSlideout: 3,
+    scrollThreshold: 10
+};
+
+const ourPubs = {
+                "news_from_science":"News from Science",
+                "science":"Science",
+                "sciadv":"Science Advances",
+                "sciimmunol":"Science Immunology", 
+                "scirobotics":"Science Robotics", 
+                "signaling":"Science Signaling", 
+                "stm":"Science Translational Medicine"
+                };
+
+const envConfig = {
+    stag: {
+        match: "stag",
+        appId: "f8a2adb3-8d7a-497a-ae8c-b241b261d142"
+    },
+    prod: {
+        match: "www",
+        appId: "e35f1e35-8993-4812-85eb-964be3377ef8"
+    },
+    dev: {
+        match: "donfick",
+        appId: "1178c6f3-6cc8-4bb9-958a-2c950ff64205"
+    }
+};
+
+const newsTypes =  new Set([
+    'feature-article',
+    'scienceinsider'
+]);
+
+function gaIsReady() {
+  return typeof window.gtag === 'function' && Array.isArray(window.dataLayer);
+}
+
+function getOneSignalAppId() {
+    const hostname = window.location.hostname;
+    for (const key in envConfig) {
+        if (hostname.includes(envConfig[key].match)) {
+            return envConfig[key].appId;
+        }
+    }
+    return null;
+}
+
+
+async function isFirebaseFCM() {
+    var url = "https://fcm.googleapis.com/";
+    try {
+        const response = await fetch(url, {method:"POST", signal:AbortSignal.timeout(8000), mode: 'no-cors'}); // 8 second timeout
+        if (response) {
+            return "True";
+        }
+    } catch (error) {
+        WPpostMessage('There was a problem with the fetch operation:', error);
+    }
+    return "False";
+}
+
+
+function isChrome() {
+    if (navigator.userAgentData?.brands?.some(b => b.brand === 'Google Chrome')) {
+        return "Chrome";
+    } else {
+        return "not Chrome";
+    }
+}
+
+////////////////////////////////
+
+function isStorageAvailable() {
+  try {
+    const x = "__test__";
+    sessionStorage.setItem(x, x);
+    sessionStorage.removeItem(x);
+    localStorage.setItem(x, x);
+    localStorage.removeItem(x);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+/////////////////////////////////////////////////
+
+
+function setupPrompt(aaasProgram) {
+  // Create the HTML string you want to insert
+  const webpushSlidePrompt = `
+  <div id="webpush-wpslidedown-container" class="webpush-wpslidedown-container webpush-reset">
+    <div id="webpush-wpslidedown-dialog" class="webpush-wpslidedown-dialog">
+      <div id="normal-wpslidedown">
+        <div class="wpslidedown-body" id="wpslidedown-body">
+          <div class="wpslidedown-body-icon">
+            <img alt="notification icon" src="/pb-assets/app-manifest/manifest-icons/icon-256x256.png">
+          </div>
+          <div class="wpslidedown-body-message">
+            Would you like to add new content from ${ourPubs[aaasProgram]} to your push notifications?
+          </div>
+          <div class="clearfix">
+          </div>
+        </div>
+        <div class="wpslidedown-footer" id="wpslidedown-footer">
+          <button class="align-right primary wpslidedown-button" id="webpush-wpslidedown-allow-button" onclick="WPaccept('${aaasProgram}');">Add This</button>
+          <button class="align-right secondary wpslidedown-button" onclick="WPdecline('${aaasProgram}');" id="webpush-wpslidedown-cancel-button">Not Now</button>
+          <div class="clearfix">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  `;
+  
+  return webpushSlidePrompt;
+}
+
+/////////////////
+
+function getStorage(storageType, key) {
+    var storage = localStorage;
+    if (storageType == "session") {
+       storage = sessionStorage;
+    }
+    var value = storage.getItem(key);
+    return value ;
+}
+
+function setStorage(storageType, key, value) {
+    var storage = localStorage;
+    if (storageType == "session") {
+        storage = sessionStorage;
+    }
+    storage.setItem(key, value);
+    return;
+}
+
+function getStorageDict(storageType, key) {
+    // expects JSON style object
+    var value = getStorage(storageType, key)
+    try {
+        value = JSON.parse(value);
+    } catch (e) {
+        WPpostMessage(e);
+        value = {}
+    }
+    return value ;
+}
+
+function setStorageDict(storageType, key, value) {
+    // returns JSON style object
+    try {
+        var value = JSON.stringify(value);
+    } catch (e) {
+        WPpostMessage(e);
+    }
+    setStorage(storageType, key, value);
+}
+
+function getWPpageviews(aaasProgram) {
+    var WPpageviews = getStorageDict('local', 'WPpageviews');
+    if (!WPpageviews) {
+        WPpageviews = {};
+    }
+    if (! (aaasProgram in WPpageviews) ) {
+        WPpageviews[aaasProgram] = 0;
+    }
+    setStorageDict('local','WPpageviews', WPpageviews);
+    return WPpageviews;
+}
+
+function incrementWPpageviews(aaasProgram) {
+    // increment the pageview counter in session storage
+    var WPpageviews = getWPpageviews(aaasProgram)
+    WPpageviews[aaasProgram] += 1;
+    setStorageDict('local','WPpageviews', WPpageviews);
+    WPpostMessage("Qualifying pageviews by product including this pageview: ");
+    WPpostMessage(JSON.stringify(WPpageviews))
+}
+
+function WPgetAttempts(aaasProgram) {
+    // returns the number of attempts that have been presented for this specific publication (aaasProgram)
+    var WPattempts = getStorageDict('local', 'WPattempts');
+    if (WPattempts == null) {
+        WPattempts = {};
+    }
+    if (! (aaasProgram in WPattempts) ) {
+        WPattempts[aaasProgram] = {'attempts': 0, 'lasttry':0};
+    }
+    setStorageDict('local', 'WPattempts',WPattempts);
+    WPpostMessage("History of prompt attempts by publication: ");
+    WPpostMessage(JSON.stringify(WPattempts))
+    WPpostMessage("The last prompt display of any type was: ");
+    var latestPrompt = getStorage('local', 'WPlatestPrompt');
+    if (!latestPrompt) {latestPrompt = 0;}
+    WPpostMessage(JSON.stringify(latestPrompt));
+    return WPattempts;
+}
+
+
+function WPshowPrompt() {
+    WPpostMessage("WPshowPrompt() ");
+    OneSignal.Slidedown.promptPushCategories();
+};
+
+/////////////////////////////////////////////////
+
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+async function WPminiPrompt(aaasProgram, timeout) {
+    WPpostMessage(aaasProgram, Date.now()/1000);
+    await sleep(timeout);
+    openSlideDown(aaasProgram);
+    WPpostMessage(aaasProgram, Date.now()/1000);
+    return;
+}
+
+
+async function closeSlideDown() {
+    WPpostMessage("closeSlideDown(aaasProgram)");
+
+    const container = document.getElementById('webpush-wpslidedown-container');
+    if (!container) return;
+
+    container.classList.add('close-wpslidedown');
+    await sleep(300);
+    container.classList.remove('wpslide-down');
+    container.classList.remove('close-wpslidedown');
+
+    if (container.parentNode) {
+        container.parentNode.removeChild(container);
+    }
+}
+
+
+async function openSlideDown(aaasProgram) {
+    WPpostMessage("openSlideDown(aaasProgram)");
+    
+    const promptHTML = setupPrompt(aaasProgram);
+
+    // Create a temporary wrapper div to parse the HTML string
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = promptHTML;
+
+    // Extract the actual container element
+    const container = tempDiv.firstElementChild;
+
+    if (!container) return;
+
+    document.body.appendChild(container);
+    container.classList.add('wpslide-down');
+    var permission = 'False';
+    if (OneSignal.Notifications.permission) {permission = 'True'}
+    if (gaIsReady()) {
+      gtag('event', 'webpush_prompt', {
+        publication: ourPubs[aaasProgram],
+        notify_permission: permission,
+        method: 'slideout',
+        style: 'mini'
+      });
+    }
+}
+
+/////////////////////////////////////////////////
+
+function WPdecline(aaasProgram) {
+    closeSlideDown();
+    var today = Date.now()/1000;
+//     setStorage('local','WPdecline',today); // this is a flag that they declined an offer today so let's not ask anything for 24 hours
+    var WPattempts = WPgetAttempts(aaasProgram);
+    WPattempts[aaasProgram]['attempts'] += 1;
+    WPattempts[aaasProgram]['lasttry'] = today;
+    setStorageDict('local', 'WPattempts',WPattempts);
+    var permission = 'False';
+    if (OneSignal.Notifications.permission) {permission = 'True'}
+    if (gaIsReady()) {
+      gtag('event', 'webpush_decline', {
+        publication: ourPubs[aaasProgram],
+        notify_permission: permission,
+        method: 'slideout',
+        style: 'mini'
+      });
+    }
+}
+
+function WPaccept(aaasProgram) {
+    closeSlideDown();
+    var today = Date.now()/1000;
+    var WPattempts = WPgetAttempts(aaasProgram);
+    WPattempts[aaasProgram]['attempts'] = 0;
+    WPattempts[aaasProgram]['lasttry'] = 0;
+    setStorageDict('local', 'WPattempts',WPattempts);
+    OneSignalDeferred.push(function() {
+        OneSignal.User.addTag(aaasProgram, '1')
+    });
+    var permission = 'False';
+    if (OneSignal.Notifications.permission) {permission = 'True'}
+    if (gaIsReady()) {
+      gtag('event', 'webpush_accept', {
+        publication: ourPubs[aaasProgram],
+        notify_permission: permission,
+        method: 'slideout',
+        style: 'mini'
+      });
+    }
+}
+
+/////////////////////////////////////////////////
+
+
+function WPdisplayPrompt(aaasProgram) {
+    // This function determines if it may be appropriate to display a slideout based on the
+    // time since last slideout attempt was declined
+    // 
+    var today = Date.now()/1000; // seconds since the epoch
+    
+    // we don't want more than one prompt of any type in 24 hours
+    var latestPrompt = getStorage('local', 'WPlatestPrompt');
+    if (!latestPrompt) {latestPrompt = 0;}
+    var timeSinceLatestPrompt = today - latestPrompt;
+    if (timeSinceLatestPrompt < WPsettings.declineCooldownSeconds) {
+        WPpostMessage("WPdisplayPrompt? Too soon since any wepbush prompt was displayed");
+        return;
+    }
+    
+    var pageviews = getWPpageviews(aaasProgram)[aaasProgram];
+    var WPattempts = WPgetAttempts(aaasProgram);
+    var attempts = WPattempts[aaasProgram]['attempts'];
+    var lasttry = WPattempts[aaasProgram]['lasttry'];
+    // Should we try? 
+    var timeSinceAttempt  = today - lasttry;
+
+    if (timeSinceAttempt < WPsettings.declineCooldownSeconds ) { 
+        WPpostMessage("WPdisplayPrompt? Too soon since last prompt for this product based on 3, 7, 30 day stepback.");
+        return;
+     }
+    
+    if ( pageviews >= WPsettings.minPageviews ) {
+        if ( (attempts == 0) ||
+             (attempts == 1 && timeSinceAttempt > (86400 * WPsettings.delayScheduleDays[1]) ) ||
+             (attempts == 2 && timeSinceAttempt > (86400 * WPsettings.delayScheduleDays[2]) ) ||
+             (attempts >= 3 && timeSinceAttempt > (86400 * WPsettings.delayScheduleDays[3]) ) 
+         ) {
+             WPpostMessage("WPdisplayPrompt? Yes, display prompt");
+             return true;
+        };
+    }
+    WPpostMessage("WPdisplayPrompt? No. Criteria has not been met.");
+    return false;
+};
+
+function WPgetAAASProgram() {
+    // What kind of page are we on? Read the AAAS Data Layer
+    // we are interested in journals: ['science', 'sciadv', 'sciimmunol', 'scirobotics', 'signaling', 'stm'] and News
+
+    var aaasProgram = '';
+    try {
+            if (! AAASdataLayer.page.attributes.aaasProgram) {
+                return aaasProgram;
+            }
+        } catch(e) {
+            if (window.location.hostname.indexOf("donfick") > -1) { 
+                WPpostMessage(e); // Error message
+            }
+            return aaasProgram;
+        }
+    aaasProgram = AAASdataLayer.page.attributes.aaasProgram;
+    if ( newsTypes.has(aaasProgram) ) { aaasProgram = 'news_from_science';}    
+    if ( aaasProgram in ourPubs) { return aaasProgram; } else { return false; }
+};
+
+
+/////////////
+
+
+async function acceptsWebPush() {
+    if (!sessionStorage.getItem("WPvendor")) {
+        sessionStorage.setItem("WPvendor", "");
+    }
+    if (!sessionStorage.getItem("WPfirebase")) {
+        sessionStorage.setItem("WPfirebase", "");
+    }
+    let WPvendor = sessionStorage.getItem("WPvendor");
+    let WPfirebase = sessionStorage.getItem("WPfirebase");
+    // if we don't know browser vendor, is it Chrome?
+    if (WPvendor == "") {
+        WPvendor = isChrome();
+        sessionStorage.setItem("WPvendor", WPvendor);
+    }
+
+    // if vendor is chome and we don't know if we have access to Google APIs    
+    if ((WPvendor == "Chrome") && (WPfirebase == "")) {
+        WPfirebase = await isFirebaseFCM();
+        sessionStorage.setItem("WPfirebase", WPfirebase);
+    }
+    WPpostMessage("The browser vendor >> "+ WPvendor);
+    WPpostMessage("Google Firebase is supported >> "+ WPfirebase);
+    // if vendor is not chrome or firebase cloud messaging is available
+    if ((WPvendor != "Chrome") || WPfirebase == "True") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function WPsetupModifyLink() {
+    if (window.location.hostname.indexOf("stag") > -1) {
+        let permission = OneSignal.Notifications.permission;
+        if (permission) {
+            const buttondiv = document.createElement('div');
+            const link = document.createElement('a');
+            link.href = '#';
+            link.textContent = 'Modify Notification Preferences';
+            link.onclick = function (event) {
+                event.preventDefault();
+                WPshowPrompt();
+            };
+            buttondiv.appendChild(link);
+            document.body.appendChild(buttondiv);
+        }
+    }
+}
+
+
+async function countActiveTags() {
+    const WPuserTags = await OneSignal.User.getTags();
+    var activeTags = 0
+    if (Object.keys(WPuserTags).length > 0) {
+        for (let key in WPuserTags) {
+            activeTags += parseInt(WPuserTags[key]);
+        }
+    }
+    return activeTags;
+}
+
+async function WPexpandCategoryTags() {
+    // either expand existing tags or offer a new subscription
+    var today = Date.now()/1000;
+    WPpostMessage("WPexpandCategoryTags(). Let's consider prompting");
+    var aaasProgram = WPgetAAASProgram();
+    if (aaasProgram) {
+        try {
+            const WPuserTags = await OneSignal.User.getTags();
+            WPpostMessage("existing WPuserTags = "+JSON.stringify(WPuserTags))
+            var activeTags = await countActiveTags();
+        
+            if ( aaasProgram in ourPubs ) {
+                // if the user is already opted in to this category, do nothing
+                if ( OneSignal.Notifications.permission && (aaasProgram in WPuserTags && WPuserTags[aaasProgram] == '1') ) {
+                    WPpostMessage("User is already opted into notifications for this aaasProgram");
+                    return;
+                }
+                // If the user has more than a minimum number of active tags, then show the full slider
+                // else, show the mini slider
+
+                if ( WPdisplayPrompt(aaasProgram) ) {
+                    if (!OneSignal.Notifications.permission) {
+                        WPpostMessage("Show full prompt (no current permissions)");
+                        setStorage('local','WPlatestPrompt',today); // this is a flag that they were presented an offer today so let's not ask anything for 24 hours
+                        OneSignal.Slidedown.promptPushCategories();
+                        return;
+                    }
+                    else {
+                        if (activeTags >= WPsettings.minTagsforFullSlideout) {
+                            WPpostMessage("Show full prompt (many active tags)");
+                            setStorage('local','WPlatestPrompt',today); // this is a flag that they were presented an offer today so let's not ask anything for 24 hours
+                            OneSignal.Slidedown.promptPushCategories();
+                            return;
+                        } else {
+                            WPpostMessage("Show mini prompt ");
+                            setStorage('local','WPlatestPrompt',today); // this is a flag that they were presented an offer today so let's not ask anything for 24 hours
+                            WPminiPrompt(aaasProgram, 0); 
+                            return;
+                        };
+                    };
+                } else {
+                    WPpostMessage("We are not displaying a prompt on this page request.")
+                }
+            };
+        } catch (e) {
+            WPpostMessage("Failed to get OneSignal tags:"+ e);
+        }    
+    }
+};
+
+
+function WPinvokeOneSignal() {
+    WPpostMessage("Setup the OneSignal API");
+    var applicationID = getOneSignalAppId();
+    
+    if (!applicationID) {
+        WPpostMessage("The applicationID is not found. This is a problem with script configuration.");
+        return;
+    } else {
+        WPpostMessage("The OneSignal application id is applicationID = " + applicationID);
+    }
+    
+    if (window.location.hostname.indexOf("stag") > -1 || window.location.hostname.indexOf("donfick") > -1) {
+        const div = document.createElement('div');
+        div.className = 'onesignal-customlink-container';
+        document.body.appendChild(div);
+    }
+    
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    
+    // OneSignal Initialization
+    OneSignalDeferred.push(async function() {
+        // webpush initialization
+        // https://documentation.onesignal.com/docs/web-sdk-reference#init
+        await OneSignal.init({
+            appId: applicationID
+        });
+        
+        // We need to patch the user tags and add news_from_science: 1
+        // for existing subscribers whose tag set completely lacks news_from_science
+        // This allows us to grandfather in users who previously received ScienceInsider
+        if (OneSignal.Notifications.permission && OneSignal.User.PushSubscription.id) {
+            var userTags = await OneSignal.User.getTags();
+            if ('news_from_science' in userTags) {
+                // do nothing
+            } else {
+                OneSignal.User.addTag('news_from_science', '1');
+                OneSignal.User.addTag('_salvaged', '1');
+            }
+        }
+        
+        // Event listener for the display of the full OneSignal prompt
+        OneSignal.Slidedown.addEventListener('slidedownShown', function (event) {
+          var permission = 'False';
+          if (OneSignal.Notifications.permission) {permission = 'True'}
+          if (gaIsReady()) {
+            gtag('event', 'webpush_prompt', {
+              publication: ourPubs[WPgetAAASProgram()],
+              notify_permission: permission,
+              method: 'slideout',
+              style: 'full'
+            });
+          }
+        });
+
+        //OneSignal does not offer listeners for the buttons within the OneSignal slidedown prompt
+
+
+        
+        
+        WPsetupModifyLink();
+
+        // Do we have a push subscription?
+        // check OneSignal.User.PushSubscription.id and isPushNotificationsEnabled
+        if (OneSignal.User.PushSubscription.id) {
+            WPpostMessage("OneSignal.User.PushSubscription.id "+ OneSignal.User.PushSubscription.id);
+        } else { 
+            WPpostMessage("OneSignal.User.PushSubscription.id is undefined");
+        }
+        
+        if (OneSignal.Notifications.permission) {
+            WPpostMessage("OneSignal.Notifications.permission is true");
+        } else {
+            WPpostMessage("OneSignal.Notifications.permission is false");
+        }
+
+    });
+}
+
+
+function WPonScroll() {
+//     WPpostMessage("WPonScroll()");
+    // 154 for standard leaderboard, 314 for jumbo leaderboard
+    // instead, let's wait for main menu to hit top.
+    var element = document.getElementById('main-menu');
+    if (element) {
+        var rect = element.getBoundingClientRect();
+        if (rect.y < 10) {
+            WPpostMessage("You've scrolled main menu to top.");
+            window.removeEventListener("scroll", WPonScroll);
+            setTimeout(function() { WPexpandCategoryTags();}, WPsettings.slideoutWaittime);
+        }
+    }
+}
+
+async function isEligiblePage() {
+
+    if ( !(await acceptsWebPush()) ) {
+        WPpostMessage("WebPush is NOT supported by browser");
+        return false;
+    }
+    if ( !isStorageAvailable() ) {
+        
+        WPpostMessage("Ineligible page. Local and Session Storage not available.");
+        return false;
+    }
+    if ( !(window.location.href.indexOf("/content/article") > -1 || window.location.href.indexOf("/doi/") > -1) ) {
+        WPpostMessage("Ineligible page. Not a content page.");
+        return false;
+    }
+    if ( !(window.location.hostname.indexOf("stag") > -1 || window.location.hostname.indexOf("www") > -1  || window.location.hostname.indexOf("donfick") > -1)) {
+        WPpostMessage("Ineligible page. Not a supported website.")
+        return false;
+    }
+    WPpostMessage("This page may be eligible.");
+    return true;
+}
+
+function WPpostMessage(msg) {
+    console.log("OneSignal WebPush >> " +msg);
+    if (WPmessaging) {
+        const messageDiv = document.getElementById('wp-messagecenter');
+        newMessage = document.createElement('p');
+        newMessage.textContent = msg;
+        messageDiv.appendChild(newMessage);
+    }
+}
+
+// begin here
+var WPmessaging = false;
+function WPstartHere() {
+    if (WPmessaging) {
+        const newMessageDiv = document.createElement("div");
+        newMessageDiv.id = 'wp-messagecenter';
+        document.body.appendChild(newMessageDiv);
+        WPpostMessage('This is the Webpush Message Center.');
+    }
+    
+    isEligiblePage().then(isEligible => {
+        if (isEligible) {
+//             document.addEventListener("DOMContentLoaded", function(event){
+                var aaasProgram = WPgetAAASProgram();
+                if (aaasProgram) {
+                WPpostMessage("This page is aaasProgram = "+ aaasProgram)
+                    // if we are unlikely to show a slide prompt on this page
+                    // go ahead and implement the OneSignal code
+                    //otherwise, wait to scroll off the leaderboard
+                    incrementWPpageviews(aaasProgram);
+                    // do we meet the criteria to display a prompt on this page
+                    // if no, setup onesignal quickly
+                    // if yes, wait for the scoll event
+                    if (!WPdisplayPrompt(aaasProgram)) {
+                        WPinvokeOneSignal();
+                    } else {
+                        WPinvokeOneSignal();
+                        WPpostMessage("Waiting for the page to scroll before we present a prompt.")
+                        window.addEventListener("scroll", WPonScroll);
+                    }
+                }
+                else {
+                    WPpostMessage("The aaasProgram is not one of our target publications or news article types. If this is unexpected, there may be a problem with the AAASdataLayer.");
+                }
+//             });
+        }
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener("DOMContentLoaded", function() {
+        // Your code to interact with the DOM goes here
+        WPstartHere();
+    });
+} else {
+    WPstartHere();
+}

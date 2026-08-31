@@ -1,0 +1,9 @@
+
+(function () {
+  var targetPath = "/content/article/precontact-australia-nid";
+  var redirectUrl = "https://www-science-org.ezproxy2.library.colostate.edu/content/article/british-first-fleet-brought-smallpox-australia-and-may-have-killed-millions";
+
+  if (window.location.pathname.indexOf(targetPath) !== -1) {
+    window.location.replace(redirectUrl);
+  }
+})();

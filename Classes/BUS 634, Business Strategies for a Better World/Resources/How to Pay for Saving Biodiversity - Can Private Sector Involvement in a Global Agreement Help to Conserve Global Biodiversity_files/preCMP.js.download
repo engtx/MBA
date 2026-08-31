@@ -1,0 +1,960 @@
+// from https://docs.osano.com/hc/en-us/articles/22469433444372-Google-Consent-Mode-v2#h_01HKJQVADYF47KAQJCZFMZWF51
+window.dataLayer = window.dataLayer ||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{
+  'ad_storage':'denied',
+  'analytics_storage':'denied',
+  'ad_user_data':'denied',
+  'ad_personalization':'denied',
+  'personalization_storage':'denied',
+  'functionality_storage':'granted',
+  'security_storage':'granted',
+  'wait_for_update': 500
+});
+gtag("set", "ads_data_redaction", true);
+gtag("set", "url_passthrough",true);
+
+// add custom CSS for Osano elements
+document.addEventListener('DOMContentLoaded', function () {
+  insertOsanoCSS();
+});
+
+function insertOsanoCSS() {
+  const style = document.createElement('style');
+  style.textContent = `
+    .osano-cm-dialog {
+      border-top: solid 4px #ca2015;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+    }
+    .osano-cm-info-dialog {
+      font-family: Roboto, sans-serif;
+    }
+    .osano-cm-button {
+      padding: 0.875rem;
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-family: Roboto, sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 1em 0;
+    } 
+    .osano-cm-info {
+      border-left: solid 4px #ca2015;
+    } 
+    input:disabled {
+      background-color: light-dark(#fff, #fff); 
+      color: light-dark(#fff, #fff);
+      background-color: #fff; 
+      color: #fff;
+    }
+    .osano-cm-toggle__input:disabled + .osano-cm-toggle__switch, 
+    .osano-cm-toggle__input:disabled:focus + .osano-cm-toggle__switch, 
+    .osano-cm-toggle__input:disabled:hover + .osano-cm-toggle__switch {
+      background-color: #E0E0E0;
+      border-color: #E0E0E0;
+    }
+    .osano-cm-toggle__input:disabled + .osano-cm-toggle__switch::after, 
+    .osano-cm-toggle__input:disabled:focus + .osano-cm-toggle__switch::after, 
+    .osano-cm-toggle__input:disabled:hover + .osano-cm-toggle__switch::after,
+    .osano-cm-toggle__input:disabled:checked + .osano-cm-toggle__switch::after, 
+    .osano-cm-toggle__input:disabled:checked:focus + .osano-cm-toggle__switch::after, 
+    .osano-cm-toggle__input:disabled:checked:hover + .osano-cm-toggle__switch::after {
+      background-color: #fff;
+      border-color: #fff;
+    }
+    .osano-cm-toggle__input:disabled:checked + .osano-cm-toggle__switch, 
+    .osano-cm-toggle__input:disabled:checked:focus + .osano-cm-toggle__switch, 
+    .osano-cm-toggle__input:disabled:checked:hover + .osano-cm-toggle__switch {
+      background-color: #FFA4A1; border-color: #FFA4A1;
+    }
+    .osano-cm-widget {display: none;}
+  `;
+  document.head.appendChild(style);
+}
+(function () {
+  let consentResolved = false;
+  let gamInitialized = false;
+  initializeHawk();
+  function hawkeyeReady(timeoutMs) {
+    return new Promise(resolve => {
+      const t0 = performance.now();
+      const check = () => {
+        if (window.hawkeye_target?.content) return resolve({ok: true, ms: performance.now() - t0});
+        if (performance.now() - t0 > timeoutMs) return resolve({ok: false, ms: performance.now() - t0});
+        setTimeout(check, 25);
+      };
+      check();
+    });
+  }
+
+  // -----------------------------
+  // 0) Utilities
+  // -----------------------------
+  function getMetaName(name) {
+    const el = document.querySelector(`meta[name="${name}"]`);
+    return el ? el.getAttribute('content') : '';
+  }
+
+  function extractRootDomain(hostname) {
+    if (hostname.includes('localhost')) return 'localhost';
+    const parts = hostname.split('.');
+    if (parts.length <= 2) return hostname;
+    let domain = parts.slice(-2).join('.');
+    if (parts[parts.length - 2].length === 2 && parts[parts.length - 1].length === 2) {
+      domain = parts.slice(-3).join('.');
+    }
+    return domain;
+  }
+
+  function computeTargetPosition(id) {
+    const arr = id.split('-');
+    if (arr.length <= 3) return arr[3] || '';
+    return arr.slice(3).join('-');
+  }
+
+  // -----------------------------
+  // 1) Initialize GAM
+  // -----------------------------
+  function initializeGam() {
+    if (typeof window.googletag === 'undefined') {
+      const s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
+      document.head.appendChild(s);
+
+      window.googletag = window.googletag || {};
+      window.googletag.cmd = window.googletag.cmd || [];
+    }
+    if (gamInitialized == false) {
+      googletag.cmd.push(function () {
+        googletag.pubads().enableSingleRequest();
+        // googletag.pubads().disableInitialLoad();
+        googletag.pubads().collapseEmptyDivs(); // does this need that if index=0 statement to ensure we don't collapse divs that just haven't loaded yet?
+        googletag.enableServices();
+      });
+      gamInitialized = true;
+    }
+
+  }
+
+  // -----------------------------
+  // 2) Initialize Hawkeye
+  // -----------------------------
+  function initializeHawk() {
+    if (typeof window.hawkeye_target === 'undefined' || typeof window.hawkeye_target.content === 'undefined') {
+      const s = document.createElement('script');
+      s.type = 'text/javascript';
+      // s.async = true;
+      s.src = 'https://hawkeye4.semetricmedia.com/content-targeting-v4.js';
+      document.head.appendChild(s);
+      return true; // loaded now (async)
+    }
+    return false; // already present
+  }
+
+  // -----------------------------
+  // 3) Hawkeye content debugger
+  // -----------------------------
+  function setHawkeyeContent(callback) {
+    if (typeof window.hawkeye_target === 'undefined' || !window.hawkeye_target || !window.hawkeye_target.content) {
+      return false;
+    }
+
+    const elems = document.getElementsByClassName('weby-hawk-tar-show');
+    for (let i = 0; i < elems.length; i++) {
+      elems[i].innerHTML = "";
+      let html = "<table border=1 width=100%><th></th><th>Content</th>";
+      for (let j = 0; j < window.hawkeye_target.content.length; j++) {
+        html += "<tr><td>" + (j + 1) + ".</td><td align=left>" + window.hawkeye_target.content[j] + "</td></tr>";
+      }
+      html += "</table>";
+      elems[i].innerHTML = html;
+    }
+    if (callback) {
+      console.log('Gam Callback called');
+      callback();
+    }
+    return true;
+  }
+
+  // function loadHawkeys(callback) {
+  //   // if any ad slots exist, ensure GAM is initialized
+  //   const weby_elems = document.querySelectorAll('[id^="div-gpt-ad-"]');
+  //   if (weby_elems.length > 0) initializeGam();
+
+  //   if (!initializeHawk()) {
+  //     setHawkeyeContent(callback);
+  //   } else {
+  //     setTimeout(function () { setHawkeyeContent(callback); }, 2000);
+  //   }
+  // }
+
+  // -----------------------------
+  // 4) Per-ID size mappings
+  // -----------------------------
+  function defineSizeMappingForId(id) {
+    const sm = googletag.sizeMapping();
+    switch (id) {
+      case 'div-gpt-ad-leader':
+      case 'div-gpt-ad-leader-inline':
+      case 'div-gpt-ad-leader-inline-2':
+      case 'div-gpt-ad-leader-inline-3':
+        return sm
+          .addSize([1300, 0], [[728, 90], [1180, 60], [1280, 60], [1280, 250]])
+          .addSize([1200, 0], [[728, 90], [1180, 60]])
+          .addSize([768, 0], [[320, 50], [728, 90]])
+          .addSize([0, 0], [320, 50])
+          .build();
+      case 'div-gpt-ad-rectangle':
+      case 'div-gpt-ad-rectangle-sticky':
+        return sm
+          .addSize([768, 0], [300, 250])
+          .addSize([0, 0], [320, 100])
+          .build();
+      case 'div-gpt-ad-tower':
+      case 'div-gpt-ad-tower-2':
+        return sm
+          .addSize([1248, 0], [300, 600])
+          .addSize([0, 0], [320, 100])
+          .build();
+      case 'div-gpt-ad-anchor':
+        return sm
+          .addSize([1300, 0], [[728, 90], [1180, 60], [1280, 60]])
+          .addSize([1200, 0], [[728, 90], [1180, 60]])
+          .addSize([768, 0], [[320, 50], [728, 90]])
+          .addSize([0, 0], [320, 50])
+          .build();
+      default:
+        return sm.addSize([0, 0], [300, 250]).build();
+    }
+  }
+
+  // For logging and defineSlot sizes
+  function sizesForId(id) {
+    switch (id) {
+      case 'div-gpt-ad-leader':
+      case 'div-gpt-ad-leader-inline':
+      case 'div-gpt-ad-leader-inline-2':
+      case 'div-gpt-ad-leader-inline-3':
+        return [[320, 50], [728, 90], [1180, 60], [1280, 60], [1280, 250]];
+      case 'div-gpt-ad-rectangle':
+      case 'div-gpt-ad-rectangle-sticky':
+        return [[320, 100], [300, 250]];
+      case 'div-gpt-ad-tower':
+      case 'div-gpt-ad-tower-2':
+        return [[320, 100], [300, 600]];
+      case 'div-gpt-ad-anchor':
+        return [[320, 50], [728, 90], [1180, 60], [1280, 60]];
+      default:
+        return [[300, 250]];
+    }
+  }
+// -----------------------------
+// 4.5) Traffic Quality Scoring
+// -----------------------------
+function initTrafficQuality() {
+  var TQ_COOKIE = 'traffic_quality';
+  var TQ_KEY = 'trafficquality';
+
+  function getCookieScore() {
+    var match = document.cookie.match(/traffic_quality=([^;]+)/);
+    return match ? match[1] : null;
+  }
+
+  function setScore(value, maxAgeSeconds) {
+    if (getCookieScore() === 'bot' && value !== 'bot') return; // bot is terminal
+    var age = maxAgeSeconds || 1800;
+    document.cookie = TQ_COOKIE + '=' + value +
+      '; path=/; max-age=' + age + '; SameSite=Lax';
+    googletag.cmd.push(function() {
+      googletag.pubads().setTargeting(TQ_KEY, value);
+    });
+    window._tqScore = value;
+  }
+
+  // Apply existing score or set unknown immediately
+  var existing = getCookieScore();
+  window._tqScore = existing || 'unknown';
+  googletag.cmd.push(function() {
+    googletag.pubads().setTargeting(TQ_KEY, existing || 'unknown');
+  });
+  if (existing) return; // already scored, no need to set up listeners
+
+  // --- Honeypot ---
+  var trap = document.createElement('div');
+  trap.setAttribute('aria-hidden', 'true');
+  trap.style.cssText = ['position:absolute','left:-9999px','top:-9999px','width:1px','height:1px','overflow:hidden','pointer-events:none'].join(';');
+  trap.innerHTML = '<a href="javascript:void(0)" tabindex="-1">Site index</a>';
+  document.body.appendChild(trap);
+  var link = trap.querySelector('a');
+  link.style.pointerEvents = 'auto';
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    setScore('bot', 86400);
+  });
+
+  // --- Rate detection ---
+  var pageCount = parseInt(sessionStorage.getItem('pv_count') || '0') + 1;
+  var firstSeen = parseInt(sessionStorage.getItem('pv_first'), 10) || Date.now();
+  sessionStorage.setItem('pv_count', pageCount);
+  sessionStorage.setItem('pv_first', firstSeen);
+
+  var elapsedMinutes = (Date.now() - firstSeen) / 60000;
+  var pagesPerMinute = pageCount / Math.max(elapsedMinutes, 1);
+
+  if (pageCount > 100 || pagesPerMinute > 10) {
+    setScore('bot', 86400);
+    return;
+  }
+
+  // --- Positive human signal: scroll + time ---
+  var scrolledEnough = false;
+  var timeElapsed = false;
+  var humanScored = false;
+
+  function maybeScoreHuman() {
+    if (getCookieScore() === 'bot') return; // bot is terminal
+    if (!humanScored && scrolledEnough && timeElapsed) {
+      humanScored = true;
+      setScore('human', 1800);
+    }
+  }
+
+  window.addEventListener('scroll', function() {
+    if (scrolledEnough) return;
+    var scrolled = window.scrollY || window.pageYOffset;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0 && (scrolled / docHeight) >= 0.30) {
+      scrolledEnough = true;
+      maybeScoreHuman();
+    }
+  }, { passive: true });
+
+  setTimeout(function() {
+    timeElapsed = true;
+    maybeScoreHuman();
+  }, 20000);
+}
+
+// -----------------------------
+// 4.6) UA Type Detection
+// -----------------------------
+function initUADetection() {
+  var UA_KEY = 'ua_type';
+  var ua = navigator.userAgent;
+
+  // Known bot UA strings
+  var knownBotUAs = [
+    'Chrome/125.0.0.0 Safari/537.36',
+    'Chrome/120.0.0.0 Safari/537.36',
+    'Chrome/125.999'
+  ];
+
+  // Broader pattern: frozen Chrome build (all-zero patch numbers)
+  // (but then later disregarded because privacy initiative)
+  // var frozenChrome = /Mac OS X 10_15_7.*Chrome\/\d+\.0\.0\.0/.test(ua);
+
+  var isKnownBot = knownBotUAs.some(function(botUA) {
+    return ua.indexOf(botUA) > -1;
+  });
+
+  // Preserve internal flag for initTieredScoring to read
+  // window._uaType = (isKnownBot || frozenChrome) ? 'known_bot' : 'clean'; //not using this frozenChrome pattern right now, not sure it's trustworthy anymore
+  window._uaType = (isKnownBot) ? 'known_bot' : 'clean';
+
+  // Build cleaned UA substring for GAM dynamic key-value
+  // Extracts OS + browser version, strips all GAM-disallowed characters
+  function buildUAString() {
+    var parts = [];
+
+    var osPatterns = [
+      /Mac OS X [\d_]+/,
+      /Windows NT [\d.]+/,
+      /Android [\d.]+/,
+      /iPhone OS [\d_]+/,
+      /Linux/
+    ];
+    for (var i = 0; i < osPatterns.length; i++) {
+      var osMatch = ua.match(osPatterns[i]);
+      if (osMatch) { parts.push(osMatch[0]); break; }
+    }
+
+    var browserPatterns = [
+      /Chrome\/[\d.]+/,
+      /Firefox\/[\d.]+/,
+      /Safari\/[\d.]+/,
+      /Edge\/[\d.]+/
+    ];
+    for (var j = 0; j < browserPatterns.length; j++) {
+      var bMatch = ua.match(browserPatterns[j]);
+      if (bMatch) { parts.push(bMatch[0]); break; }
+    }
+
+    var raw = parts.length ? parts.join(' ') : 'other';
+    // Strip GAM disallowed characters: " ' = ! + # * ~ ; ^ ( ) < > [ ] , &
+    return raw.replace(/["'=!+#*~;^()<>\[\],&]/g, '').trim().slice(0, 50);
+  }
+
+  var uaString = buildUAString();
+
+  googletag.cmd.push(function() {
+    googletag.pubads().setTargeting(UA_KEY, uaString);
+  });
+
+  window._uaString = uaString; // debug convenience
+}
+function initTieredScoring() {
+  var TQ_TIERED_KEY = 'tq_tiered';
+  var TQ_TIERED_COOKIE = 'tq_tiered_score';
+  var NEUTRAL = 50;
+
+  var config = {
+    sessionDecayStep: 10,            // points toward neutral per qualifying new session
+    sessionDecayThresholdHours: 4,   // must be away this long for new session to trigger decay
+    scrollTimeBonus: 20,
+    institutionBonus: 25,
+    institutionMax: 80,
+    humanCookieBonus: 15,
+    humanCookieMax: 70,
+    headlessPenalty: 25,
+    moderateRateThreshold: 50,
+    moderateRatePenalty: 15,
+    pageDepthBonus: {
+      low:  { min: 2,  max: 5,  bonus: 5  },
+      mid:  { min: 6,  max: 15, bonus: 10 },
+      high: { min: 16, max: 30, bonus: 3  }
+    }
+  };
+
+  // --- Cookie helpers ---
+  function readCookie() {
+    var match = document.cookie.match(/tq_tiered_score=([^;]+)/);
+    if (!match) return null;
+    try { return JSON.parse(decodeURIComponent(match[1])); }
+    catch(e) { return null; }
+  }
+
+  function writeCookie(data, maxAgeSeconds) {
+    document.cookie = TQ_TIERED_COOKIE + '=' +
+      encodeURIComponent(JSON.stringify(data)) +
+      '; path=/; max-age=' + (maxAgeSeconds || 172800) +
+      '; SameSite=Lax';
+  }
+
+  // --- Session-based decay ---
+  // Each qualifying new session (tab load with no sessionStorage flag,
+  // after a meaningful gap) reduces score one step toward neutral.
+  // Tabs refreshed within the same session never decay.
+  // Multiple tabs opened simultaneously don't stack decay steps
+  // because the first tab updates lastSeen, making the cookie look recent
+  // to subsequent tabs.
+  function applySessionDecay(stored) {
+    var sessionFlag = sessionStorage.getItem('tq_session_init');
+    sessionStorage.setItem('tq_session_init', '1');
+
+    if (sessionFlag) {
+      // Same session (tab was refreshed) — no decay
+      return stored.score;
+    }
+
+    // New tab — check if gap is large enough to qualify as a new session
+    var hoursSince = (Date.now() - stored.lastSeen) / 3600000;
+    if (hoursSince < config.sessionDecayThresholdHours) {
+      // Recent visit (or sibling tab just updated lastSeen) — no decay
+      return stored.score;
+    }
+
+    // Qualifying new session — apply one step toward neutral
+    var step = config.sessionDecayStep;
+    if (stored.score > NEUTRAL) return Math.max(NEUTRAL, stored.score - step);
+    if (stored.score < NEUTRAL) return Math.min(NEUTRAL, stored.score + step);
+    return NEUTRAL;
+  }
+
+  // --- State ---
+  var currentScore = NEUTRAL;
+  var isTerminal = false;
+
+  function clamp(n) {
+    return Math.max(1, Math.min(100, Math.round(n)));
+  }
+
+  function pushToGAM(score) {
+    googletag.cmd.push(function() {
+      googletag.pubads().setTargeting(TQ_TIERED_KEY, String(score));
+    });
+    window._tqTiered = score;
+  }
+
+  function saveAndPush(score, terminal, maxAge) {
+    currentScore = clamp(score);
+    isTerminal = !!terminal;
+    writeCookie({
+      score: currentScore,
+      lastSeen: Date.now(),
+      terminal: isTerminal
+    }, maxAge);
+    pushToGAM(currentScore);
+  }
+
+  function adjustScore(delta) {
+    if (isTerminal) return;
+    saveAndPush(currentScore + delta);
+  }
+
+  function setTerminal(maxAge) {
+    isTerminal = true;
+    saveAndPush(1, true, maxAge || 86400);
+  }
+
+  // --- Initialize from existing cookie ---
+  var stored = readCookie();
+  if (stored) {
+    if (stored.terminal) {
+      currentScore = 1;
+      isTerminal = true;
+      pushToGAM(1);
+      return;
+    }
+    currentScore = applySessionDecay(stored);
+  } else {
+    // No cookie — first visit, mark session as initialized
+    sessionStorage.setItem('tq_session_init', '1');
+  }
+
+  // --- Synchronous signals ---
+
+  if (window._uaType === 'known_bot') {
+    setTerminal(604800); // 7 days
+    return;
+  }
+
+  if (navigator.plugins.length === 0 && window.outerWidth === 0) {
+    currentScore = clamp(currentScore - config.headlessPenalty);
+  }
+
+  var pageCount = parseInt(sessionStorage.getItem('pv_count') || '0');
+  if (pageCount >= config.moderateRateThreshold) {
+    currentScore = clamp(currentScore - config.moderateRatePenalty);
+  }
+
+  var pd = config.pageDepthBonus;
+  if      (pageCount >= pd.low.min  && pageCount <= pd.low.max)  currentScore = clamp(currentScore + pd.low.bonus);
+  else if (pageCount >= pd.mid.min  && pageCount <= pd.mid.max)  currentScore = clamp(currentScore + pd.mid.bonus);
+  else if (pageCount >= pd.high.min && pageCount <= pd.high.max) currentScore = clamp(currentScore + pd.high.bonus);
+
+  // Institutional auth — strong human signal
+  var instEl = document.getElementsByClassName('institution__name');
+  if (instEl && instEl.length && instEl[0].innerText.trim().length > 0) {
+    currentScore = clamp(Math.min(config.institutionMax, currentScore + config.institutionBonus));
+  }
+
+  // Existing trafficquality=human cookie
+  var tqMatch = document.cookie.match(/traffic_quality=([^;]+)/);
+  if (tqMatch && tqMatch[1] === 'human') {
+    currentScore = clamp(Math.min(config.humanCookieMax, currentScore + config.humanCookieBonus));
+  }
+
+  saveAndPush(currentScore);
+
+  // --- React to trafficquality changes ---
+  window.addEventListener('tqChange', function(e) {
+    if (isTerminal) return;
+    if (e.detail.value === 'bot') {
+      setTerminal(86400);
+    } else if (e.detail.value === 'human') {
+      adjustScore(config.scrollTimeBonus);
+    }
+  });
+}
+
+  // -----------------------------
+  // 5) Build full ad context -> slotName, adCode, pageType, aaasProgram, article_id, subject, etc.
+  // -----------------------------
+  function buildAdContext(elem) {
+    let id = elem.getAttribute('id');
+    let targetPos = computeTargetPosition(id);
+
+    let netCode = elem.getAttribute('network_code') || '21824331052';
+    let path = window.location.pathname;
+    if (path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
+
+    const hostname = window.location.hostname;
+    const rootDomain = extractRootDomain(hostname);
+    let subDomain = hostname.split('.')[0];
+    const queryParams = window.location.search;
+
+    let article_id = '';
+    let subject = '';
+    let environment = 'prod';
+
+    // overrides
+    if (queryParams.indexOf('gam_subdomain_override') > -1 &&
+        queryParams.indexOf('gam_path_override') > -1 &&
+        typeof URLSearchParams !== 'undefined') {
+      const searchParams = new URLSearchParams(window.location.search);
+      subDomain = searchParams.get('gam_subdomain_override');
+      path = '/' + searchParams.get('gam_path_override');
+    }
+
+    // article_id
+    if (path.startsWith('/content') && path.split('/').length > 4) {
+      article_id = path.replace('/content/', '').split('/').join('-');
+    }
+
+    let adCode = '';
+    let pageType = '';
+    let aaasProgram = '';
+
+    if (getMetaName('citation_journal_title') !== '') {
+      pageType = 'journal';
+      aaasProgram = getMetaName('citation_journal_title').toLowerCase().split(' ').join('-');
+    }
+
+    const mainMenu = document.getElementById('main-menu');
+    if (mainMenu && mainMenu.getAttribute('data-parent') && mainMenu.getAttribute('data-parent') !== '') {
+      aaasProgram = mainMenu.getAttribute('data-parent').toLowerCase().split(' ').join('-');
+      if (document.querySelectorAll('main.news-article--featured').length > 0) {
+        aaasProgram = 'news-feature';
+      }
+      if (path.startsWith('/content/article')) {
+        pageType = 'article';
+      }
+    }
+
+    if (path.startsWith('/content')) {
+      if (path.startsWith('/content/podcast')) {
+        pageType = 'podcast';
+        aaasProgram = 'science';
+      } else if (path.startsWith('/content/resource')) {
+        pageType = 'resource/';
+        let resClass = document.querySelector('.news-article__hero__type.font-weight-bold');
+        if (resClass) {
+          pageType = pageType + resClass.innerText.toLowerCase();
+        }
+        let resCustom = document.querySelector('.crumb.text-uppercase.prev-crumb');
+        if (resCustom) {
+          resCustom = resCustom.innerText.toLowerCase();
+          if (resCustom === 'custom publishing' || resCustom === 'sponsored by') {
+            aaasProgram = 'custom-publishing';
+          }
+        }
+      } else if (path.startsWith('/content/blog-post')) {
+        pageType = 'blog';
+        let blogClass = document.querySelector('.news-article__hero__type.font-weight-bold');
+        if (blogClass) {
+          aaasProgram = blogClass.getAttribute('Title').toLowerCase().replace(/["']/g, '').split(' ').join('-');
+        }
+      } else if (path.startsWith('/content/article')) {
+        pageType = 'article';
+        let resClass = document.querySelector('.news-article__hero__type.font-weight-bold');
+        if (resClass) {
+          aaasProgram = resClass.getAttribute('Title').toLowerCase().replace(/["']/g, '').split(' ').join('-');
+        }
+        let doiVal = document.querySelector(".news-article-content-footer.mb-3 .text-sm.letter-spacing-default");
+        if (doiVal) {
+          let txt = doiVal.innerHTML;
+          if (txt.startsWith('doi') && txt.split('.')[2] === 'caredit') {
+            aaasProgram = 'careers';
+          }
+        }
+      } else if (path.startsWith('/content/page')) {
+        pageType = 'page';
+        const prizeArr = document.getElementsByClassName('crumb text-uppercase prev-crumb');
+        for (let i = 0; i < prizeArr.length; i++) {
+          if (prizeArr[i].innerText.toLowerCase().includes('prizes')) {
+            pageType = 'prizes';
+            aaasProgram = 'science';
+            break;
+          }
+        }
+      }
+    } else if (path.startsWith('/blogs')) {
+      aaasProgram = 'blogs';
+    } else if (path.startsWith('/collections')) {
+      pageType = 'collections';
+      if (path.split('/').length > 2) {
+        aaasProgram = path.split('/')[2];
+      }
+    } else if (path.startsWith('/search/advanced')) {
+      aaasProgram = 'search';
+      pageType = 'advanced';
+    } else if (path.startsWith('/action/doSearch')) {
+      aaasProgram = 'search';
+      pageType = 'results';
+    } else if (path.startsWith('/topic/tags')) {
+      const pathArr = path.split('/');
+      if (pathArr.length > 3) {
+        aaasProgram = pathArr.slice(3).join('-');
+      }
+      pageType = 'topic';
+    }
+
+    if (path.startsWith('/journal') || path.startsWith('/career') ||
+        path.startsWith('/commentary') || path.startsWith('/news') ||
+        path.startsWith('/blogs')) {
+      pageType = 'router';
+    }
+
+    // subject from AAASdataLayer
+    if (window && window.AAASdataLayer && window.AAASdataLayer.page && window.AAASdataLayer.page.attributes) {
+      subject = window.AAASdataLayer.page.attributes.OAS_subject;
+      if (subject) {
+        subject = subject.replaceAll('subject=', '').replaceAll('&', ' ').replaceAll(';', '');
+      }
+    }
+
+    if (!aaasProgram) {
+      const prevCrumbs = document.getElementsByClassName('crumb text-uppercase prev-crumb');
+      if (prevCrumbs.length) {
+        let prev = prevCrumbs[prevCrumbs.length - 1].innerText.toLowerCase();
+        aaasProgram = prev.replace(/\W+/g, '-');
+      }
+    }
+
+    if (!pageType) {
+      const currCrumbs = document.getElementsByClassName('crumb text-uppercase current-crumb');
+      if (currCrumbs.length) {
+        let curr = currCrumbs[0].innerText.toLowerCase();
+        pageType = curr.replace(/\W+/g, '-');
+      }
+    }
+
+    if (!aaasProgram) aaasProgram = path;
+
+    adCode = aaasProgram + '/' + pageType;
+    if (!pageType) adCode = aaasProgram;
+    if (path === '') adCode = '/science/homepage';
+
+    // precode for subdomain
+    let precode = '';
+    if (subDomain.includes('spj') || subDomain.includes('promo')) {
+      precode = '/spj';
+    }
+
+    // slot name
+    let slotName = '/' + netCode;
+    if (adCode) {
+      if (adCode.charAt(0) === '/') {
+        slotName = '/' + netCode + precode + adCode;
+      } else {
+        slotName = '/' + netCode + precode + '/' + adCode;
+      }
+    }
+
+    if (subDomain.includes('spj') || subDomain.includes('promo')) {
+      slotName = slotName.replace('&', '').replace('--', '-');
+    }
+
+    // environment targeting
+    if (typeof window.WB_ENVIRONMENT !== 'undefined' && window.WB_ENVIRONMENT === 'prod') {
+      environment = 'prod';
+    }
+    if (window.location.href.startsWith('https://aaas-stag.literatumonline.com')) {
+      environment = 'test';
+    }
+
+    // stem_url (<= 40 chars, trimmed at path boundary)
+    let stemUrl = window.location.hostname + window.location.pathname;
+    if (stemUrl.length > 40) {
+      stemUrl = stemUrl.slice(0, 37);
+      let arr = stemUrl.split('/');
+      arr.pop();
+      stemUrl = arr.join('/');
+      if (stemUrl.length < 37) stemUrl += '/...';
+    }
+
+    const absoluteUrl = window.location.host + window.location.pathname;
+    let last40url = absoluteUrl.length > 40 ? absoluteUrl.substr(absoluteUrl.length - 40) : absoluteUrl;
+
+    return {
+      id, netCode, path, hostname, rootDomain, subDomain,
+      targetPos, adCode, slotName, article_id, subject,
+      environment, stemUrl, last40url
+    };
+  }
+
+  // -----------------------------
+  // 6) Anchor listener
+  // -----------------------------
+  function canLoadSlot(targetedelement) {
+    elId = targetedelement.attributes.id.value;
+    if (elId === 'div-gpt-ad-anchor') {
+      return false; // don't need the second check we previously had (below) -- we just don't want to load the anchor as part of the rest of the lazyload; anchor is handled entirely in waitForOsano
+      // return consentResolved === true;
+    }
+    return true;
+  }
+
+  // -----------------------------
+  // 7) Core: load a single GAM component
+  // adFlag: 0 personalized, 1 non-personalized
+  // index: used to collapse empty divs on the first slot
+  // -----------------------------
+  function loadGamComponent(elem, index) {
+    const ctx = buildAdContext(elem);
+    const { id, slotName, targetPos, article_id, subject, environment, hostname } = ctx;
+
+    googletag.cmd.push(function () {
+      const sizeMapping = defineSizeMappingForId(id);
+      const slotSizes = sizesForId(id);
+
+      // logging targeting values to console
+      console.log('slotName', slotName);
+      console.log('slot_sizes', slotSizes);
+      // console.log('position', targetPos);
+      // console.log('content', window.hawkeye_target.content);
+      // console.log('article_id', article_id);
+      // console.log('subject', subject);
+      console.log('environment', environment);
+      console.log('domain_subdomain', hostname);
+      // console.log('stem_url', stemUrl);
+      // console.log('last40url', last40url);
+      // console.log('institutionname', institute);
+      console.log('tq', window._tqScore);
+
+      // Consent / request personalization
+      // googletag.pubads().setRequestNonPersonalizedAds(adFlag);
+      // googletag.pubads().enableSingleRequest();
+      // if (index === 0) {
+      //   googletag.pubads().collapseEmptyDivs();
+      // }
+
+      // Define slot + base targeting
+      let gSlot = googletag.defineSlot(slotName, slotSizes, id)
+        .setTargeting('position', targetPos);
+
+      // Hawkeye content targeting
+      if (typeof window.hawkeye_target !== 'undefined' &&
+          window.hawkeye_target && window.hawkeye_target.content) {
+        gSlot = gSlot.setTargeting('content', window.hawkeye_target.content);
+        gSlot = gSlot.setTargeting('hk_content', 'set');
+      } else {
+        gSlot = gSlot.setTargeting('hk_content', 'unset');
+      }
+
+      if (article_id) {
+        gSlot = gSlot.setTargeting('article_id', article_id);
+      }
+
+      if (subject && typeof subject !== 'undefined' && subject.length > 0) {
+        gSlot = gSlot.setTargeting('subject', subject);
+      }
+
+      gSlot = gSlot
+        .setTargeting('environment', environment)
+        .setTargeting('domain_subdomain', hostname);
+
+      // stem_url + last40url
+      const stemUrl = ctx.stemUrl;
+      const last40url = ctx.last40url;
+      gSlot = gSlot.setTargeting('stem_url', stemUrl).setTargeting('last40url', last40url);
+
+      // institutionname (if present)
+      const instEl = document.getElementsByClassName('institution__name');
+      if (instEl && instEl.length) {
+        const institute = instEl[0].innerText;
+        gSlot = gSlot.setTargeting('institutionname', institute);
+      }
+      // finish slot services
+      gSlot.defineSizeMapping(sizeMapping).addService(googletag.pubads());
+
+      // Enable & display
+      // googletag.enableServices();
+      googletag.display(id);
+    });
+  }
+
+  // -----------------------------
+  // 8) Public-like API: load all components with consent handling
+  // Selects elements whose IDs start with "div-gpt-ad-"
+  // -----------------------------
+  function loadGamComponents(cookieVal = {}, componentType = '') {
+    const elems = document.querySelectorAll('[id^="div-gpt-ad-"]');
+
+    // viewport guard from original
+    const VPheight = document.documentElement.clientHeight;
+    const VPwidth = document.documentElement.clientWidth;
+    if (!(VPheight >= 150 && VPwidth >= 320)) return;
+
+    if (elems.length > 0) initializeGam();
+    if (typeof window.googletag === 'undefined' || !window.googletag) return;
+
+    // consent -> nonPersonalizedAds flag
+    // let markCok = true;
+    // try {
+    //   if (cookieVal && componentType && cookieVal.hasOwnProperty(showComponentsMap[componentType].consentType)) {
+    //     markCok = cookieVal[showComponentsMap[componentType].consentType];
+    //   }
+    // } catch (_) { /* if showComponentsMap not present, default true */ }
+    // const nonPersonalizedAdsFlg = markCok ? 0 : 1;
+
+    // Lazy load with IntersectionObserver (once), fallback to immediate
+    const loadOne = (el, i) => loadGamComponent(el, i);
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            const index = Array.prototype.indexOf.call(elems, e.target);
+            if (!canLoadSlot(e.target)) {
+              return; // anchor never reaches GPT yet
+            }
+            loadOne(e.target, index);
+            obs.unobserve(e.target);
+          }
+        });
+      }, { rootMargin: '200px 0px', threshold: 0.1 });
+
+      elems.forEach(el => observer.observe(el));
+    } else {
+      elems.forEach((el, i) => loadOne(el, i));
+    }
+  }
+if (!window.loadGamComponent) window.loadGamComponent = loadGamComponent;
+  // -----------------------------
+  // 9) Boot
+  // -----------------------------
+  document.addEventListener('DOMContentLoaded', function () {
+    initializeGam();
+    initTrafficQuality();
+    initUADetection();
+    initTieredScoring();
+    hawkeyeReady(2500).then(r => { //still need to determine proper timeoutMs -- 2500 is claude's guess
+      if (!r.ok) console.warn('[ads] hawkeye timeout', r.ms);
+      setHawkeyeContent(); // debug table only, no callback needed
+      loadGamComponents();
+    });
+    // loadHawkeys(); // will async-load Hawk if needed & then render the debug table if present
+    // loadGamComponents(); // Kick off ad loading (uses IO for once-only lazy)
+  });
+  function waitForOsano() {
+    if (window.Osano?.cm?.addEventListener) {
+      window.Osano.cm.addEventListener('osano-cm-ui-changed', (component, stateChange) => {
+        if (component === 'dialog' && stateChange === 'show') {
+          consentResolved = false;
+        } else if (component === 'dialog' && stateChange === 'hide') {
+          consentResolved = true;
+        }
+      });
+      window.Osano.cm.addEventListener('osano-cm-consent-saved', function (consentOBJ) {
+        document.addEventListener("DOMContentLoaded", () => {
+          hawkeyeReady(2500).then(() => {
+            consentResolved = true;
+            const anchoryo = document.getElementById('div-gpt-ad-anchor');
+            if (anchoryo) loadGamComponent(anchoryo, 0);
+          });
+        });
+      });
+    } else {
+      setTimeout(waitForOsano, 100);
+    }
+  }
+  waitForOsano();
+})();
