@@ -1,0 +1,1311 @@
+Help File
+
+
+Contents
+
+Search
+
+Full version
+Introduction to Marketing - bikes
+A. Introduction to Marketplace Decisions
+Game Scenario
+How to Win
+B. Player Activities
+Decisions to be Made by Quarter
+Functional Organization of the Executive Team
+Goals and Strategic Direction
+Company Name
+C. Market Research
+Initial Research: Market Opportunity Analysis (MOA)
+Types of Information Available
+Interpreting the Survey Data
+Understanding What Customers Value
+End User Feedback: Fast Tests
+Competitive Benchmark
+D. Brand Management
+Brand Management Decisions
+Brand Design
+Match-up Benefits and Features
+Consider the Price the Market Will Bear
+Test Market
+Brand Name
+Brand Loyalty
+E. Advertising Decisions
+Planning the Advertising Program
+Ad Copy Design
+Deceptive Advertising
+Media Placement
+Advertising Effectiveness
+F. Internet Marketing
+G. Store Decisions
+Territory Development
+Store Management
+Brand Selection
+Brand Price
+Price Elasticity
+Competitive Prices
+Price Rebate
+Sales Order Priority
+Sales Force Management
+Number of Salespeople
+Target Market Specialty
+H. Accounting
+Activity Based Costing (ABC)
+Profitability of Marketing Division
+I. Balanced Scorecard
+J. Glossary
+Brand Components
+Fatal Errors
+A. Introduction to Marketplace Decisions Back to contents
+Game Scenario
+How to Win
+A vast array of decisions must be made to compete in Marketplace. These decisions are patterned after real-world decisions made by new venture firms. Each decision has been limited to its most important dimensions in order to keep the game manageable. Still, there is sufficient complexity and realism to challenge you to the maximum.
+
+The real challenge in the game, and in real-life new ventures, is that you must continually make a large number of concurrent strategic and tactical decisions. There is no rest from the advertising decision or the market development decision while you solve the pricing decision.
+
+You not only have to worry about the tradeoffs within each decision area, but you must also evaluate the tradeoffs between decision areas. Part of the value of the Marketplace experience is learning to manage a dynamic and complex world.
+
+Marketplace will also give you practice in strategic and tactical decision making. After identifying your options, weighing the advantages and disadvantages of each, you must commit yourself to a course of action.
+
+The outcome of that action will always be uncertain, but you will find that you can make educated guesses and learn from the results of these decisions in the next quarter. You can then make adjustments so that even questionable decisions can be managed (our hindsight is so much better than our foresight).
+
+The content, context, and educational objective of each decision to be made in the simulation are reviewed in the chapters found under the Help file icon. This help file contains a conceptual discussion of the decisions that you must make. The material found here will help you become familiar with every step in the decision process.
+
+The decisions are presented in approximately the order in which they would be executed in the real world, starting with executive team formation, through market analysis, brand design, advertising, distribution, manufacturing, and financing.
+
+This step-by-step process will help you organize your decision making while playing the game.
+
+It is recommended that you first review all the material found in each chapter in its entirety in order to get a feel for the "whole" of the decision context. Next, sit down at your computer and work your way through each decision to be made. It is important that you physically enter decisions and investigate the effects of alternate decisions. This form of "hands-on" experience will help familiarize you with the consequences of your decisions.
+
+Finally, the Decisions to be Made by Quarter section will help you organize your work throughout the simulation exercise.
+
+Game Scenario Back to chapterBack to contents
+Corporate Headquarters has selected you to manage a new Marketing Division. Your company will be introducing a new line of carbon fiber bicycles into four geographic markets.
+
+The map shows four geographic markets.The map shows the four markets are New York, Rio de Janeiro, Amsterdam, and Bangalore.
+
+Headquarters has selected four geographic markets as potential sites for test marketing. Each city represents a different market opportunity. The mix of customers with different potential demand will vary across each of them.
+
+Within the carbon fiber bicycles industry, other firms will be entering the market at the same time as your division. To keep the scenario simple, assume the industry is in its introductory stage of the product life cycle. That is, there is no history and there are no established competitors. Furthermore, assume that all competitors, including your own division, will start with exactly the same resources and knowledge of the market.
+
+The current status of the carbon fiber bicycle market:
+The carbon fiber bicycle market is a niche segment of the bicycle industry. Almost all carbon fiber bikes are very expensive. As a result, sales have been limited to high performance road and mountain bikes by elite users. Many other riders would love to have the benefits of a carbon fiber bike, but they have been too expensive to purchase. With the introduction of moderately priced carbon fiber bikes, all of this could change. If things unfold as expected, this business could actually be in the introductory stage of the product life cycle.
+Other firms will be entering the market at the same time that you are. As it turns out, the whole bicycle industry is interested in 3D printing and distributed manufacturing. Each firm is financing a new division to test out the market for these new carbon fiber bikes.
+You will be selling through company-owned bike stores. Corporate Headquarters does not want to sell through third-party bike stores at this time. There are too many unanswered questions and Headquarters wants to retain complete control of this test market.
+All competitors, including your own company, will start with exactly the same resources and knowledge of the market.
+Market Segments
+The bicycle market can be divided into three major market segments - Recreation, Mountain, and Speed. Each segment has its own set of needs and wants. Each one also has a price point where they are willing to consider a purchase, should you be able to satisfy their needs and wants.
+
+These segments are portrayed in the accompanying graph. The circles are positioned to indicate the price and performance requirements of each segment. The size of the segment is portrayed by the size of the circle.
+
+Relative comparison of the 3 segments. Recreation is the largest market, satisfied with a little performance at a lower price. Speed is the smallest market willing to pay most for the most performance. Mountain is the middle-sized segment, demanding something between the other two.
+
+The Recreation segment is looking for fun and a little exercise. These consumers are very sociable and enjoy biking with friends and family on relatively short excursions. These consumers are not as hardy as other bike riders; therefore, comfort and ease of handling are very important. Bikes that appeal to this segment can also take on elements of mountain bikes. They need to be durable and able to handle bike paths and other light terrain. Occasionally, they need to be able to carry small items, such as picnic lunches, light packages, and even a few groceries.
+
+This segment is moderately price sensitive. They will pay extra for comfort and ease of use, but not for much more.
+
+The Mountain segment wants a bike that can be taken on off-road trails. Consumers in this segment use a bicycle for adventure, exercise, and sport. They like the challenge of riding on difficult terrain. They take pride in their skills, and many love the excitement and adrenaline rush that comes with tackling hills, downhill runs, and cross-country treks. Vigorous exercise makes it all the better.
+
+Consumers in this segment are willing to pay a premium for features that enable them to traverse difficult terrains. Sturdy, powerful, and agile bikes are highly desired.
+
+The Speed segment is focused on speed, as the name suggests. It is looking for the lightest, fastest, most aerodynamic bike on the market. Pedaling quickly across the countryside provides the exercise and sport these bikers desire. They enjoy the competitive spirit and comradery of races and group rides, but are just as happy to bike alone.
+
+These consumers love the physical challenge of long distance rides. They take pride in how healthy they must be to be fast, strong, and competitive. They are willing to pay a high price and sacrifice comfort and utility to get an edge over other riders.
+
+Each segment has different needs, and wants and requires a different market strategy to appeal to it. One of your first decisions will be to select one segment to target. You will develop and execute a very focused strategy to profitably serve this segment. Once you gain some experience in the market, you will add a second target segment within your marketing strategy.
+
+Corporate Headquarters will use a balanced scorecard to measure your Marketing Division's performance. The division's score will be based upon its financial performance, market effectiveness, and marketing performance.
+
+Starting in quarter 4, the team can check its own performance and the performance of its competitors by viewing the balanced scorecard in the Performance Report section. The goal is to be the best competitor in Marketplace.
+
+Your executive team has the next year and a half (6 quarters or decision periods) to get this company off the ground. Within this time frame, you should become a self-sufficient firm, earning substantial profits from your operations.
+
+This description represents the whole of the world you will face. From this point forward, you will receive information, as you need it. You will also be given an ever-expanding set of decisions to make. The sequence follows the way in which a new product is introduced to the market in the real world.
+
+How to Win Back to chapterBack to contents
+The formula for success in business and marketing is very simple.
+Make lots of people happy and you can earn a lot of money.
+
+Here are the rules:
+
+Find out what people want.
+Give them what they want.
+Tell them you have what they want (advertise).
+Hire sales people to explain how you have the solution to their needs (distribution and sales force management).
+Collect the money for a job well done.
+Sounds easy, right?
+Of course, there are a couple of things that get in the way.
+
+First, not all customers are alike. One offer will not work for everyone. People have different tastes, preferences, needs, etc.
+
+As a result, many potential customers will wait until they find the "right" solution for their needs. To paraphrase a famous quote, you can satisfy some of the people all of the time, but never all of the people all of the time. So, demand may not be as great as you would like or hope.
+
+The way around this problem is to discover the differences in needs among your customers (market research), break the customers down into smaller groups with similar needs (segmentation), and then develop a strategy for each group (target marketing).
+
+Second, everyone wants more for less. A lower price for the same goods should help in generating more demand and taking business away from your competition.
+
+Sure, you would like to sell for less, but you have to pay your expenses and earn a profit.
+
+One solution to this pricing dilemma is often found in larger sales volumes. If you can generate large sales volumes, production costs per unit will usually drop dramatically. Lower costs for the goods sold will allow you to lower your prices and/or increase your profits.
+
+How do you create larger sales volumes? Offer a better product at a better price and tell everyone about it (advertising and sales force).
+
+Third, there will always be someone that wants to make money in the same market as you. Competitors will always emerge and try to take your sales and profits.
+
+How will they do this?
+
+Smart competitors will study the customers' needs PLUS study what you have to offer (benchmark) and then create and sell a better solution. Usually, they find a group (segment) whose needs are not well served and then develop a superior strategy targeted at that group.
+
+Fourth, customers will always gravitate towards the better offer.
+
+Your job is never done. You must always check your offer against the customers' evolving needs (satisfaction level) and that of the competition (benchmark) and make sure you have the better product, price, promotion, and distribution.
+
+In a nutshell, be the best at giving the customer what the customer wants. Then advertise to the customers about how good you are at meeting their needs. This should create lots of sales that will drive down your costs and thus allow you to offer good prices with good profits.
+
+Of course, it is not this easy, but this is the essence of business and marketing.
+
+Keep these guidelines in mind as you compete in Marketplace. If you follow them, you will be successful. You will be a winner in Marketplace!
+
+Good luck!
+
+B. Player Activities Back to contents
+Decisions to be Made by Quarter
+Functional Organization of the Executive Team
+Goals and Strategic Direction
+Company Name
+This chapter will familiarize you with the activities you will perform as you work through the exercise from quarter to quarter. You need to determine the functional organization of the executive team, and the goals and strategic directions your company will follow for the next year and a half. You will also need to decide upon a company name. Make your initial decisions thoughtfully. Even though you can adjust your strategy later, some changes may be costly.
+
+Decisions to be Made by Quarter Back to chapterBack to contents
+Note: Be prepared to justify your decisions, and explain the rationale used to form them.
+
+Quarter 1: Setup your company, evaluate market opportunities and prepare for test market.
+Theme: Introduction and initial goals, and what path are you going to take initially.
+Determine desired image of company
+Designate a company name
+Analyze market opportunities - evaluate segments, geographic markets, and potential competition
+Evaluate the market survey results
+Establish corporate goals and strategic direction
+Select target segment
+Establish strategic direction
+Select test market
+Open sales outlet
+Quarter 2: Go to market to test your strategy and market assumptions.
+Theme: Let's go to market!
+Create customer value - match components to benefits desired (quality function deployment (QFD))
+Design one brand
+Marketing strategy - evaluate tactical options and choose marketing mix
+Brand price
+Price promotions
+Sales priority
+Develop media plan and budget - ad copy design, media selection, and ad frequency
+Place advertisements in media
+Sales force management - number employed, and training
+Hire salespeople assign to service or target segments
+Open new sales outlet (optional)
+Quarter 3: Evaluate test market performance and revise your strategy, become a learning organization.
+Theme: The results are in! What now?
+Evaluate performance
+Financial performance - profitability analysis
+Market performance - customer opinion of brand designs, prices, advertising, and sales force
+Competitor tactics - segments targeted and selection of marketing tactics
+Revise marketing tactics as needed and continue test marketing
+Build your Internet marketing campaign. Create a web page with content that will appeal to your target segment
+Quarter 4: Evaluate your position in the market and adjust your strategy.
+Theme: You know the market. Do you know your competition?
+Evaluate performance
+Financial performance - profitability analysis
+Market performance - customer opinion of brand designs, prices, advertising, and sales force
+Competitor tactics - segments targeted and selection of marketing tactics
+Adjust strategy - make incremental changes in tactics
+use activity based costing (ABC) to evaluate profitability of brands
+evaluate profitability of division
+conduct demand analysis to estimate brand, price, advertising, and sales force elasticity
+Quarter 5: Monitor, improve, and execute.
+Theme: Customers want more. It's time for new technology!
+Evaluate performance
+Financial performance - profitability analysis
+Market performance - customer opinion of brand designs, prices, advertising, and sales force
+Competitor tactics - segments targeted and selection of marketing tactics
+Skillfully adjust strategy
+Improve brands, pricing, and sales force
+Quarter 6: Monitor, improve, and execute (continue).
+Theme: The big push.
+Manage strategy
+Skillfully adjust strategy to unanticipated competitive moves
+Continuously improve brand features, pricing, and sales force
+Let's evaluate your market performance.
+
+Evaluation of financial and market performance
+Review of business
+Comparison of actions taken against your marketing goals
+Review of significant events that affected the company and/or market
+Assessment of current situation and market (Also, how is the current market different than it was in the early quarters?)
+Customers
+Competition
+Company strengths and weaknesses
+Major problems/opportunities to be dealt with in next year
+Functional Organization of the Executive Team Back to chapterBack to contents
+One of your first responsibilities in setting up your new venture will be to organize your executive team and assign responsibilities. This task is critical because Marketplace requires more work than any one person can do.
+
+It is not efficient for everyone to participate in all aspects of the business. Ultimately, team organization and management will determine team effectiveness and the team's satisfaction in working together.
+
+Teams may have members rotate positions periodically, so that everyone experiences more than one decision area. The advantage to this approach is that the participants develop a good feeling for all of the decisions to be made. It also helps the team members to develop a common frame of reference.
+
+Functional Roles
+There are many ways to divide the team's responsibilities. Here are the possible executive assignment categories:
+
+President - Overall Leadership: Coordinates all functional areas, participates in all areas, setting objectives, organizing and assigning work, managing schedules and meetings, monitoring overall performance (balanced scorecard), and managing the team to lead the industry.
+Vice President, Brand Management: Delivery of customer needs through brand design and pricing.
+Vice President, Advertising: Delivery of customer needs through ad copy design and media placement.
+Vice President, Sales Management: Distribution (location and timing of sales offices), selection and funding of sales force management tactics (number, targeting and training).
+Vice President, Finance: Financial performance, profit analysis, and capital structure.
+Vice President, Business Analytics: Analysis of market and operational data.
+There are many variations on this division of tasks. For example, in a five-person team the president would also be responsible for one of the other management positions.
+
+You could have the leadership responsibility rotate through the team at appropriate points so that almost everyone obtains leadership experience.
+
+Other variations to the team assignments will depend upon the number of participants. If your group has four members, consider assigning the President a VP responsibility, and combining the VP of Marketing with the role of VP of Business Analytics.
+
+Another way to organize your team is to use the brand management format. There would still be a President and Vice Presidents, but in this case, a brand management position would be assigned for each brand or segment that is to be targeted. For example, one individual would be responsible for their normal role as President or Vice President plus all of the marketing research, marketing, and sales for an individual brand or segment.
+
+The advantage of this format is that one individual is in charge of knowing all there is to know about a segment of the market and is responsible for developing an effective strategy. It also provides a broader base of experience for more people on the team. The disadvantage is that competition can develop among brand managers as they vie for the resources and attention of the firm.
+
+A variation on brand management is territory management. Once again, there would still be a President and Vice Presidents. The team is broken up into city managers, and each city manager is in charge of knowing everything about a city and developing an effective strategy for competing in that city.
+
+Keep in mind that these guidelines are merely suggestions. Feel free to depart from these guidelines if individual preferences, experiences, or workloads would allow a more equitable allocation of tasks. Also, do not hesitate to reallocate responsibility if conflicts arise or the workload is unevenly distributed.
+
+Team Management
+Consider the following points about team management. First, very few new ventures succeed without strong leadership, shared goals, a willingness to compromise, a strong work ethic, and a willingness to carry one's share of the burden.
+
+You will have a very short time to organize your firm and bring it on-line as an effective, hard-hitting business enterprise. None of you can do it alone. You must learn to work as a team with everyone pulling his or her weight in the same direction.
+
+Second, conflict within the team is inevitable. This is because you must make some tough decisions that are filled with uncertainty and risk. You will never have enough information or enough resources to do all that you want.
+
+Furthermore, members of your executive team will have conflicting opinions on strategy, tactics, and resource management. The ability to resolve conflict and the manner in which it is resolved may very well make the difference in whether or not you can succeed in business.
+
+Finally, time management will be vital to your success in playing Marketplace. There is more to do than you have time for. Many teams get bogged down in executive committee meetings.
+
+As a suggestion, the president should preside over each executive meeting, making sure that the discussion does not wander from the business at hand. Each team meeting should begin with an agenda and a timetable. Meetings should not last more than two hours. Long, drawn-out meetings are not productive and raise frustration levels about not getting things done. The meeting should conclude with a set of action items for each executive. The outcome of these actions should be reviewed at the start of the next meeting.
+
+To facilitate the running of executive meetings, each team member should prepare his/her work in advance. The executive should know the ins and outs, problems, and tradeoffs of his/her area of responsibility.
+
+When the executive committee meets as a whole, each executive should have a plan of action to recommend to the team. The executive should be prepared to thoroughly discuss the options open to the company and be flexible on the final decision of the executive team.
+
+Goals and Strategic Direction Back to chapterBack to contents
+Your company must decide the order of priority for your target market.
+
+At the outset of your business, the single most important set of decisions you will make involves defining your organization goals and strategic direction. In essence, you must choose the path you are going to take for the next few quarters of your business.
+
+The path will cause you to channel your energies, hopefully in a manner that will be productive for both you and the organization. However, the further you go down that path, the more difficult it will be to change direction. All of your investments, both intellectual and financial, will be pumped into an increasingly narrower and more focused set of decisions.
+
+The first task is to analyze the market information from your market research. This market analysis will help you to determine the available market opportunities. With this information as a backdrop, you must make decisions in the following areas:
+
+Target Markets: Your company can decide which market segment to target with your product, and which marketing efforts will most effectively reach that market segment. Then add another segment/s in later quarters.
+Strategic Direction: Your company should decide where it is headed in the future. What are your future goals for: market size; geographic markets; competitive posture; and distinctive competency?
+Through quarter 3, consider your goals and strategic direction to be tentative. As you gain experience through test marketing, feel free to modify these initial decisions. However, by quarter 4, your strategic direction should be firmly established. If not, you will probably not have an opportunity to catch up with the leading firms in your industry.
+
+Players can sell to all segments in each quarter of sales, and, in most quarters, they will. Even though they are not targeting a segment, a number of customers of the non-targeted segments may like the products offered and buy them. Money made from sales to any segment will help revenues and, in turn, will positively affect certain areas of the Balanced Scorecard, such as financial performance.
+
+The reason players have to designate which segments are their primary and secondary target segment is to enable the Balanced Scorecard to evaluate their marketing performance. If the majority of a team's sales are in their primary target market and the second largest amount of sales is in their secondary target segment, then they will have a good score for marketing. In other words, they are meeting their marketing goals with brand and ad designs that are a good fit for those segments. If they have a large number of sales in segments that are not their primary or secondary choices, then their marketing scores will be lower as they are not appealing to the segments they have targeted.
+
+The balanced scorecard measures several factors of a firm's performance to get a rounded view of the company's overall success rather than just financial success. The players can see the full calculation for how the balanced scorecard is determined in that section of their team software.
+
+Company Name Back to chapterBack to contents
+Select a name for your enterprise. Start by defining the image you wish your company to project. Keep in mind what the name may mean to end-users, your competition, and potential investors.
+
+A good company name is important in establishing a good first impression. You can use it to influence the expectations of those who do not know you.
+
+However, your competitive behavior and style of business will ultimately define your image and what your name will come to mean. After all, while the words apple or google have no intrinsic value, Apple and Google have come to represent highly professional organizations that tend to do things right.
+
+C. Market Research Back to contents
+Initial Research: Market Opportunity Analysis (MOA)
+Types of Information Available
+Interpreting the Survey Data
+Understanding What Customers Value
+End User Feedback: Fast Tests
+Competitive Benchmark
+Initially, your company should conduct marketing research to determine:
+
+The structure of the market.
+The market requirements of customers.
+The strengths and weaknesses of competitors.
+This is known as a Market Opportunity Analysis (MOA). An outside research firm will collect the data that you will require. The raw data is available as early as Quarter 1. You should begin the task of interpreting the survey data.
+
+As a starting point, prepare a market profile for each segment. Look for patterns within and between the segments to begin to understand what customers value.
+
+Construction of your MOA is a continuing process which will be updated as new information such as end-user feedback and competitive benchmark results become available in future quarters.
+
+One of the objectives of your continuing MOA must be to develop market forecasts of market potential, market demand, and/or brand/sales outlet demand. In your first sales quarter, you will be able to conduct test marketing on your product and other marketing tactics. In the following quarter, you will receive data on customer opinions and competitive tactics. This test market data should enable you to skillfully adjust your tactics in order to better serve the needs of the market and outsmart your competition.
+
+Learning Objective
+The primary objective of the MOA effort is to give you experience in the study and evaluation of market opportunities. The starting point of all marketing effort is the determination of the needs and wants of the available markets and an estimation of the market potential of each segment. The firm must then evaluate the relative cost to serve each segment versus its financial attractiveness.
+
+The ultimate objective is to select one or more target markets for development. The target market decision, in turn, strongly affects all subsequent marketing decisions, including brand design, pricing, advertisement, media planning, and distribution. Thus, the first step in the process of strategic planning is Market Opportunity Analysis.
+
+Concepts Emphasized
+MOA: The identification and assessment of market opportunities based upon an analysis of:
+
+The structure of the market.
+The market requirements of customers.
+The strengths and weaknesses of competitors.
+Market analysis: Sorting through and evaluating the information and ascertaining the strategic implications of the findings.
+
+Laddering and means-end hierarchy: Interpreting the data in terms of the linkages between benefits and features and benefits and values desired.
+
+Forecasting: Prediction of market potential and demand based upon market data and one's assumptions regarding:
+
+The accuracy of customer purchase intentions.
+The ability of their industry to serve the market.
+The comparative advantage of your firm versus your competition.
+Initial Research: Market Opportunity Analysis (MOA) Back to chapterBack to contents
+A market opportunity analysis (MOA) is the identification and assessment of market opportunities.
+
+An MOA provides the foundation for designing an effective strategy to capitalize on one or more of the identified opportunities. At this stage in the development of your industry, it is not possible to seriously evaluate your potential competitors. Just like your company, they are all entrepreneurial firms without a track record.
+
+After some quarters, you should be able to judge their strengths and weaknesses and use this information in your strategic and tactical planning. For now, you must focus on the end-users. They are your ultimate boss, and you must ascertain what it will take to make them happy.
+
+Your initial MOA should begin with an analysis of your potential customers. The marketing research data that you have available are patterned after the real-world. The data has been modified and simplified in order to facilitate its use in the simulation. Since the market modeled in the simulation is based upon this information, it is important for your firm to analyze the data.
+
+To begin your MOA, read the topics below to learn more about:
+
+Types of Information Available
+Interpreting the Survey Data
+Understanding What Customers Value
+
+Types of Information Available Back to chapterBack to contents
+There are three types of initial market information that the outside market research firm has collected for you. The major categories are customer needs and wants, price willing to pay, and market size.
+
+The market data will be reported for the market as a whole. Data for individual cities will not be provided. Market size estimates are available for each city. Each type of information is discussed in detail below.
+
+The first part of the market survey seeks to determine what benefits are sought by each major market segment. Potential customers are asked to review a list of benefits and rate their relative importance on a scale from 1 to 100. These values are then standardized with a mean of 100.
+
+Values between 100 and 110 are well within the norm for the population. They represent minimum performance requirements for a segment, but do not indicate anything unique about the segment.
+
+It is not until the rating score exceeds the norm that the benefit becomes an important factor in distinguishing between segments. You will want to be especially sensitive to the high scores because your firm must provide that benefit in order to appeal to the segment.
+
+The second type of information you will receive is data on the price the customer would consider paying for the ideal brand.
+
+The final piece of information that will be provided to you is an estimate of total market potential for the next twelve months. This number is computed for you by multiplying:
+
+the percent of customers who intend to buy
+(x) the number of potential customers in each segment
+(x) the number of units that a customer is likely to buy in the next 12 months
+Please be cautious in using this market information. At best, these estimates are very rough projections. Buying intentions are notorious for being wrong about actual purchases. The actual purchase rate will ultimately depend upon how well the product is designed, priced, and distributed, as well as the condition of the economy and how well you and your competition serve the market.
+
+Interpreting the Survey Data Back to chapterBack to contents
+The interpretation of research data is more art than science. The marketing research firm will give you data. Your analysis and interpretation of the data is needed to convert it into information. Your objective should be to look for patterns in the data. These patterns should help you understand the overall structure of the market and the subtleties of each segment.
+
+As a starting point, you receive a market profile for each segment. Take each section of the survey and summarize the distinguishing characteristics of each segment.
+
+Once you have a profile of each segment, look for the patterns within and between the segments. There are no statistical techniques to help you here. You will have to draw upon your natural insight and creativity. The patterns exist; it is only a matter of discerning them.
+
+After you have a good mental picture of the segment, give it a name, for example, "the sensory segment" as in toothpaste users. A name will make it easier to think about the segment and discuss it with your teammates. Choose a name that embodies the image you have of the segment. To help you out, we have given each segment a tentative name (see the Game Scenario).
+
+Also, find a picture that conveys the type of people who use the product and how they use it. Attach it to your profile. (Look in magazines that carry related ads.) Marketers for new Ford cars have used this technique to help them visualize their target customers.
+
+In planning for a new car, they assembled a large collection of pictures depicting their target customers and how they use their cars and placed them on a large bulletin board. Executives would stop by and study the board when they were trying to resolve difficult problems. They even held meetings in front of it. Their objective was to make sure they think of their customers as real people and not as abstractions or tables of numbers.
+
+As noted above, the marketing research firm recommends that you study the information on price willing to pay and potential demand in each segment for all markets. By multiplying price willing to pay times potential demand, you would obtain an estimate of the financial potential of each market and segment. This information would be very helpful in selecting your initial target segments and sales outlet locations.
+
+As a word of caution, never forget the difference between market potential and market demand. Market demand will always be less than market potential. The rate at which market potential is converted into actual sales demand will depend upon the quality and quantity of the industry's total marketing effort. Your share of that demand will, in turn, depend upon the quality and quantity of your marketing efforts relative to your competitors'.
+
+As a final note on market surveys, keep in mind that respondents are not infallible in their responses to a researcher's questions. On occasion, they may not give a response that reflects their true position on an issue because they are either unable or unwilling to do so. As a consequence, it is extremely important that you include market testing in your MOA.
+
+That is, design your brands and ads and set your prices in a fashion that your market survey suggests is best for your target markets; then see how the market reacts to them. Customers' reactions (actual purchases) are better indicators of their motives than their words.
+
+Thus, a complete MOA should include a market survey and test marketing. To obtain test market feedback on your market offering, you will want to purchase Market research.
+
+Understanding What Customers Value Back to chapterBack to contents
+Once you have organized your data by market segment, your interpretative work has just begun. It is necessary to further translate this data into useful information. Specifically, the data regarding customer needs is very helpful in understanding the benefits and costs perceived in the use of the product.
+
+But, this data tells you almost nothing about which components can deliver the benefits desired or avoid the costs feared. Also, the data barely touches on the values desired through product use. Customers do not buy components or features; they buy benefits. At a higher level, these benefits help users to accomplish their goals and to realize certain values or end states.
+
+It is your job to figure out how to deliver the value desired. A good way to start is to apply the logic behind the means-end hierarchy. Take the most important benefits desired by each segment and speculate on which components or services will be necessary to deliver these benefits.
+
+Draw ladders downward linking the benefits with the features or components (also referred to as attributes) which can be built into a new product at the production facility. Next, extend the ladder upwards and speculate on the values being sought through these benefits.
+
+For each segment, you need to build several ladders linking the available components to the benefits desired and then up to the values to be served. Once all of the ladders have been built for each of the important benefits, try to bring them together into a coherent whole.
+
+The ladders and the overall means-end hierarchy will be useful in designing your new brands. In fact, this information is a prerequisite to brand design decisions. It will form the foundation of the Quality Function Deployment (QFD) techniques to be used in designing brands.
+
+End User Feedback: Fast Tests Back to chapterBack to contents
+The end-user feedback is in the form of fast tests. The fast tests give you a summary judgment or evaluation of currently available brands, prices, and advertising copy from your customers' viewpoint. They are labeled Brand Judgment, Price Judgment and Ad Judgment.
+
+See below for more information on:
+
+Brand, Price, and Ad Ratings
+The Source of Fast Test Data
+The Use of Fast Test Data
+Brand, Price, and Ad Ratings
+The brand judgment provides an indication of how closely a brand matches the needs of each market segment. All of the brands sold in a particular geographic market are rated by several panels of local buyers. Each brand will receive a rating of between 1 and 100 from each market segment.
+
+A rating of 100 indicates that a brand satisfies all of the needs of the segment. A score of less than 100 indicates that the brand design is deficient in some respect. The lower the score, the lower the interest in the brand and the lower the sales from that segment.
+
+The price judgment is obtained in the same way. The price of every brand in the local market is evaluated by the same panels of current buyers. Each price is given a score of from 1 to 100 by each of the segments. A good rating is 95 or higher. Ratings of 100 would indicate the market might actually be willing to pay more.
+
+For the brand judgment, a score of 70 is the minimum needed to serve the market. At this level, customers will begin to give serious consideration to buying the brand. The score, however, suggests that the market will respond vigorously to further improvements in brand design.
+
+A judgment score over 90 is considered very good. Demand should increase exponentially as brand ratings climb above the 70 score minimum, all other things being equal. However, it is not enough to have a high score on one variable; both dimensions (price and design) must be satisfied simultaneously to win market favor.
+
+Ad Copy Judgments can also be obtained under the fast test program. The ratings represent a summary judgment of the appeal of an advertisement to each market segment. The consumer panels are asked to evaluate each one of these ads.
+
+For each ad, you will be given a simple rating score that may vary from 1 to 100. A separate rating is obtained from each segment. The higher the rating, the more appealing the ad is to a market segment. End-users seem to be very demanding in their evaluation of a firm's advertisements. Ratings in the 70s are difficult to obtain. A rating over 80 is generally considered to be very good.
+
+The Source of Fast Test Data
+To help you visualize how the numbers are derived, it is useful to review the marketing research procedure. Specifically, your marketing research firm has been hired to conduct personal interviews in each trading area that you select for study. Potential customers are presented with the actual brands, prices, and full color copies of all ads.
+
+The customers evaluate every brand for sale in that market, the price of each brand, and all advertisements that have been run in any media. As they evaluate each brand, price, or advertisement, they can compare one to another. For example, when they are conducting the brand judgments, they are permitted to physically examine each brand.
+
+After the brand evaluations are completed, a price card is positioned in front of the brand and the judgments are taken. In the case of the magazine ads, the tear sheets are mounted on stiff cardboard and presented to each subject in a different random order.
+
+The end-user is then permitted to sort through the ads until all ads have been rated. (Due to the comparative procedures employed, the ratings could change as new brands and advertisements are introduced into the market and the evaluation set is enlarged.)
+
+In each case, the end-user is not asked to justify his or her rating. To expand the study and collect customer opinion regarding these evaluations would substantially increase the cost.
+
+In addition, the research firm has reservations about the accuracy of customer opinion for this application. It is felt that customers make their purchase decisions based upon the whole package (gestalt) of what is offered rather than an analysis of individual components or ad benefits. (The whole is greater than the sum of the parts.)
+
+A sample of subjects is recruited from each market-segment group. Every brand, price, and ad is rated by each sample. This procedure allows a rating to be computed separately for each segment. Thus, the same price, brand design, or advertisement may receive a high rating from one segment and a low to moderate rating from the remaining segments. If your target marketing efforts have been successful, the high ratings should appear in the segment(s) targeted.
+
+The Use of Fast Test Data
+To obtain insight into the relative appeal of different features or ad benefits, it will be necessary for you to apply deductive reasoning. That is, simultaneously compare several brand designs and their respective ratings.
+
+Ideally, look for two brands that have everything in common except for one or two features. A comparison of the brand ratings with slightly different brand designs should suggest the relative importance of one feature over another. Because each segment has a different set of needs, this analysis must be conducted separately for each one. Ad ratings can be analyzed in the same fashion.
+
+The end-user feedback will be useful in different ways at each stage in your market development. During the test-marketing phase, the fast tests will be invaluable in testing your assumptions of what the end-user is actually looking for in a brand, price, or advertisement.
+
+The initial market survey represents a good starting point, but it operates at the abstract level. During test marketing, customers deal with reality. They can see and touch the final product in its entirety. Their judgments at this point are closer to their true attitudes. Consequently, the fast tests will provide you with better information to deduce which feature or benefit is more appealing than another.
+
+During the introductory phase of the market, you will probably encounter little direct competition. In markets with little competition, the various judgments are important in terms of their absolute scores. They indicate how closely your decisions have matched the needs of the market.
+
+As you enter more competitive markets during the growth phase, you should probably turn to relative evaluations of brand judgments, price judgments and ad copy judgments. In markets with multiple competitors, market share will be determined more by relative performance than by absolute performance.
+
+This is because the shortcomings of a brand are accentuated when there is a better brand to compare it with. Thus, a difference in brand scores of five points (an 85 versus a 90) can have a disproportionate effect on the crossover to the better brand. The same is true for price and ad judgments.
+
+During the maturity phase of the market, you will find that the decision-making of all competitors will be greatly refined. Poor designs will be phased out, prices will be in line with consumer expectations and the basic ingredients of a good ad will be widely known. The competitive focus will be on distribution (maximizing showroom exposure), production (achieving economies of scale), advertising (justifying and allocating large budgets), and price (achieving greater production economies through small market-share gains).
+
+In this market, the role of the various fast tests will diminish. It will serve more as a monitoring function to track any unexpected shifts in market opinion.
+
+Competitive Benchmark Back to chapterBack to contents
+The marketing research firm offers its competitive benchmark research in addition to its end-user feedback. By using the competitive benchmark service, you can learn about the competitive environment.
+
+Data can be obtained relative to the demand by segment for every brand in the market, the sales channel decisions, and the advertising decisions of every competitor.
+
+Essentially, this information will tell you what your competitors did during the previous quarter in any market in which you might be interested. The competitive benchmark data allows you to keep track of what is happening in the market. That is, you can obtain a complete record of all of the decisions that were made in the public arena.
+
+For comparison purposes, the end-user feedback research provides qualitative information whereas the competitive benchmark research provides quantitative data. By combining these data, you should be able to ascertain the strengths and weaknesses of your own firm and your competition.
+
+Brand Demand, Sales Channel Decisions, Sales Force Plans, Advertising decisions
+The brand demand data contains estimates of market demand in the selected geographic market. Demand information is obtained for each brand on the shelf and is broken out by segment. That is, you can observe how many units of a particular competitor's brand were demanded by each specific segment.
+
+The brand demand data also includes local and total market summaries for each company. Specifically, the number of units demanded by segment is added across all sales channels opened and across all brands on the market. Thus, a company can observe how many units each segment demanded.
+
+The local and total market summaries are also used to compute market share information. Each company can determine its market share by segment and for the market as a whole. Finally, the total market summaries can be used to compute the proportion of each firm's total demand that is derived from each of the market segments. This information will indicate the relative importance of each segment to a company.
+
+You can also obtain information on the sales channel and sales force decisions of every competitor. You can find out which brands are carried in the showrooms, their sales priority, prices, and whether or not a rebate accompanies any brand. You can also determine which companies have sales channels open in the city, the size of their sales force and how many sales people are trained in each segment's needs.
+
+Another type of data that you can obtain is the competitor's advertising program. The ad plans contain information on the quantity and also quality of their ad campaigns. You can determine what message is being conveyed, its frequency, its media outlet and its geographic target for every competitor.
+
+Now that you know what data is available, read below to learn about the use of Competitive Benchmark Data. If you can discover patterns in the decision-making process of end-users and competitors, you will have substantially improved your odds of succeeding in Marketplace.
+
+Use of Competitive Benchmark Data
+The most direct application of the competitive benchmark data is simply keeping track of what is happening in the market. Too often, young executives are attuned to only what they do to generate business for the company. It is almost as if the rest of the world does not count.
+
+Then they are heard to complain that the market is not responding to their marketing efforts or that it is over-responding. What they have failed to realize is that a large portion of their success or failure can be attributed to the actions of their competitors.
+
+For example, when a company did not observe the expected jump in demand after cutting the price by 20 percent, was it because competitors also cut their prices on comparable brands? If a sales volume is not experiencing any growth, but the rest of the industry is doubling sales, the team needs to know that the other competitors have twice as many brands, twice as many salespeople, and twice as many sales channels in operation.
+
+If the bottom falls out of the market, could it be that everyone scaled back their marketing efforts by raising prices, reducing sales forces, and cutting back on advertising because there was not enough capacity to meet expected demand? Was the blitz ad campaign of one company counteracted by the blitz ad campaign of another?
+
+These examples may seem obvious, but too many executive teams do not know why their sales are flat, decreasing, or even increasing. To determine the effectiveness of their decisions, each team must include the decisions of its competitors in its analysis. In almost every case, the investment in marketing research is worth the price.
+
+When you receive your marketing research, you will be overwhelmed with numbers. The answers to your questions will not jump out at you. It will take work to find them. Multiple regression, discriminate analysis, analysis of variance, and linear programming do not seem to work. They are usually not helpful because there are too many variables working at the same time, and because many of the relationships are curvilinear.
+
+Most statistical packages assume linear relationships. The key to the analysis is finding patterns in the data. Compare one situation with another. If at all possible, find situations that are nearly identical. If all other things are equal (ceteris paribus), then it is possible to isolate the effect of a change or difference on a single variable.
+
+For example, if two firms in the same market carry a brand with the same features, give it the same sales priority (or close) and a similar price; then the only major difference between the two cases should be the firms' advertising efforts. To eliminate the effect of sales force, it is suggested that you divide the brand demand by the number of salespeople in the sales channel.
+
+A company with six salespeople will always generate more demand than one with two, all other things being equal. It is also suggested that you avoid comparing firms that carry vastly different numbers of brands. A firm with a wide selection of brands is likely to generate more total demand than a firm offering only one or two brands, even though sales of each brand might be less if sold individually.
+
+The company might also try different prices and observe the combined effect of differences in brand design and pricing. Or the company might try vastly different sales priorities and observe the combined effect of design and sales priority. Obviously, the task becomes more difficult if more than one variable at a time is affecting sales.
+
+If you wish to determine the relative importance of different design features to a segment, find similar brands being sold in the same geographic market and compare their brand judgments. If you get lucky (it happens often because more than one competitor will target the same market), two or three brands will enter the market with only one or two features that are different. The same is true for advertisement.
+
+As you undertake your marketing research, keep five points in mind.
+
+Try to set up or find situations in which only one variable is different. Sales managers are able to experiment with their use of sales priorities, brand selection, prices, and sales force allocation. A sales manager can manipulate key variables and study their effect on demand. Alternatively, you can engage in experimentation by identifying situations where only one, or at most two variables are different.
+You want to look for patterns in the data. A 10 percent price difference may have very little effect on demand for the high-performance segment, but it could have a sizable effect on the price-conscious segment. The single best source for discovering these patterns is the city competitor profiles. If you have purchased all of the available test market data, a special report can be printed that details individual brand demand (by segment) as well as brand, price, and ad judgments.
+
+This data also includes the media schedule, sales force plans for the city, and the key indicator of demand per salesperson. The goal is to determine what causes the sales per salesperson for one competitor to be higher or lower than another. Are there differences in prices, brand judgments, or media plans that might explain the differences? Does one competitor have more brands targeted to a segment, or more service personnel?
+
+Whatever the sources of differences in demand, the competitor profiles will help you find important clues. Look for patterns in the data. If you can determine how the market is responding to the decisions of your company and your competitors, you will have a significant advantage over the competition.
+
+You can learn as much from the decisions of others as you can from your own. There is a good chance that one of your competitors executed a decision that you were considering. By studying the effect of their decision, you can gain some insight whether or not it was a good course of action. In the same vein, do not limit your market research to only the cities in which you are represented, especially during the test market phase. Many valuable lessons may be lost if you focus on only your marketing efforts.
+Plan on investing some time in reviewing the marketing research. The learning will not come easy. You must display a considerable amount of insight and creativity to discern the patterns in the data and figure out how to use them to your advantage. Every time you go back and review the data, you can learn something more.
+Keep in mind that the computer model is logical. When you become frustrated because you cannot figure out why something is happening the way it is, remember that the world of Marketplace is based upon logic. There are no random events; everything is cause and effect.
+
+It is all patterned after the basic principles of marketing found in most introductory textbooks. In a sense, the computer model is unrealistic because it is totally logical, but that is the way computers are. (The seemingly illogical and random part is provided by the players.) To make the programming task manageable, the real world had to be simplified and logically organized. What makes the analysis task difficult is the large number of decision variables that are simultaneously influencing events.
+
+In a sense, your research task is to reverse engineer the Marketplace model - that is, to figure out what is in the black box and how it works through the study of what is observable. You might argue that this approach is unfair or unrealistic, but is it not what you must do with real consumers and industrial buyers? From the study of their decisions, you try to determine what makes the customer tick. What goes on in their minds (the black box)? What is motivating them to action? What is more important - price, state of the art technology, a high sales priority, or something else?
+
+The key to market research in the real world is the discovery of patterns in the decision making of the end user and competitors. If you can discover these patterns, you will have substantially improved your odds of succeeding in the real marketplace.
+
+D. Brand Management Back to contents
+Brand Management Decisions
+Brand Design
+Match-up Benefits and Features
+Consider the Price the Market Will Bear
+Test Market
+Brand Name
+Brand Loyalty
+After completing your market opportunity analysis (MOA), you are asked to make the following brand management decisions:
+
+Brand design
+Brand name
+Learning Objective:
+The primary objective of the brand management effort is to help you understand the relationship between the abstract benefits sought by customers and the physical components which can be produced in the production facility. Consumers buy sex appeal, speed, less work, relaxation, excitement, and so forth. The production facility cannot deal with these abstractions. As a brand or marketing manager, you must tell the production division what specific components are to be built into each brand.
+
+The entire organization depends upon your ability to evaluate whether component X or component Y provides the right amount of the desired benefit. Moreover, will the final selection of components satisfy the complete set of needs of the customer while keeping the final price within his or her price sensitivity constraints?
+
+Concepts Emphasized:
+Brand design: Selection of production components which provide the desired level of an abstract benefit while remaining within the price constraints of the target market.
+
+Quality Function Deployment (QFD): A technique for systematically matching features to benefits.
+
+Brand labeling: Selection of a brand name designed to project a defined image, purpose, or benefit of a brand.
+
+Target marketing: Selection of individual segments for market development.
+
+Differentiated marketing strategy: Development of a unique marketing strategy for each segment.
+-versus-
+Mass marketing strategy: Development of a generic marketing strategy designed to appeal to multiple segments.
+
+Decision-making: Evaluation of the pros and cons of available investment options, and making a commitment of resources to an uncertain future.
+
+Brand Management Decisions Back to chapterBack to contents
+Brand management includes Brand Design and Brand Name. Your task is to interpret the abstract benefits which end users say they want in a brand, and select features or components that will provide the desired benefits.
+
+During the early stages of market development, this task is filled with risk. Both you and the consumers lack sufficient experience to know for sure what will or will not meet their needs. It is not until the consumer sees and uses the physical product that he or she can truly judge the value of the offer. As the product assortment grows and consumers make their choices from among the available brands, the relative attractiveness of the available features should become clearer.
+
+Brand Design Back to chapterBack to contents
+Initially, your company should conduct marketing research to determine:
+
+The structure of the market.
+The market requirements of customers.
+The strengths and weaknesses of competitors.
+This is known as a Market Opportunity Analysis (MOA).
+
+After you have completed your MOA, your next step is to design a one brand to put on the market. To accomplish this task, you must:Match up Benefits and Features that are attractive to your target market, Consider the Price the Market Will Bear, and Test Market to Discover the Performance Response Curve.
+
+Through your selection of features and their accompanying costs, you must position the brand favorably relative to your target market. Choose one segment which you consider to be the most attractive, and design a brand for this segment. You will not be able to design more than one brand until you receive the results of your first test marketing efforts.
+
+Your firm will be given a set of standard features from which to begin designing brands. The company will later have additional R&D options. Your job is to pick and choose the features that will appeal, in combination, to your target segment(s). You have several options under each component area.
+
+Each market segment evaluates each component or feature in light of its needs. In some cases, a feature will fall short of the requirements of one segment, while in another case, it may provide more capability than is needed. Without providing too little or too much in the way of performance, your goal is to match up the features to the needs of the market.
+
+The role you are fulfilling is that of a brand manager. To help you visualize the responsibility, imagine that you are in a committee meeting with the engineering staff. Your task is to provide the engineering staff with a specification sheet (spec sheet) on the product you want them to make in the production facility. This spec sheet lists each component or feature that will go into the product you intend to test market. You must decide on the exact features. You cannot hedge your bets. You must commit to the design that you think has the best chance of succeeding.
+
+This responsibility is always difficult and filled with risk. As you will discover, it is even more difficult and risky for a firm that does not have any market experience.
+
+Note the cost to design or modify a brand. You can modify the same brand multiple times in the same quarter and you will only be charged once. So, if you create brand "A" in quarter 3 and then decide to modify brand "A" while still in quarter 3, you will only be charged once, but if you modify brand "A" once and brand "B" once, you will be charged twice. If you enter the brand design screen and decide you do not want to design/modify the brand, then use the cancel option so that you will not be charged.
+
+If you modify a brand that was designed in a prior quarter, you must change the name because it is new brand. The only exception to this rule is if the brand was created in the current quarter. For example, if you design a brand in quarter 4 and then decide to modify it while still in quarter 4, then you do not have to change the name. You must change the name for any brand you modify that was designed in a previous quarter.
+
+There are a few important reasons for why the brand name must change when you modify an existing brand. First, it is a signal to the market that you have made a change, and hopefully, an improvement on the prior edition. To help the market know that you have purposely modified an existing brand, you might give it an extension like 200, Plus, Max, or XL, anything that will differentiate the upgraded brand from the prior model. You can create an entire product line with numeric extensions like Apple does with its iPhones. Each new edition has a nigher number to indicate that it is better than the one that came before.
+
+You can work in the opposite direction as well. For example, you might take out less important features of a highly successful model to appeal to the lower end of the price performance spectrum. The addition of an extension such as, Light or Fun Edition, lets the market know that you are offering many of the same benefits as the high-priced model but at a lower price.
+
+You may wish to continue selling the earlier edition. If it had good performance ratings, the market might very well wish to continue buying it, especially if it was marked down a little from a new improved model.
+
+Having multiple brands derived from the same core features enables you to create a product line. You can offer a good (earliest model), better (previous model), and best (the newest model) edition to appeal to multiple points on the price performance spectrum.
+
+It is also necessary to change the brand name for accounting and production purposes. The new model needs to have its own Stock Keep Unit (SKU) identification so that all costs and revenues can be properly allocated to the new model.
+
+Finally, a new name will avoid confusion in the market and within the company. When performance ratings, costs, and ad messaging change based upon different features, people will wonder what caused the change. The model is not the same as before, so what is different? The confusion could well work against the goals that you have for the revised model.
+
+As a matter of good business practice, when you modify an existing brand, change the name to indicate that the new one is different in some way from the model from which it originated.
+
+Match-up Benefits and Features Back to chapterBack to contents
+Your market opportunity analysis is very important to your understanding of what a customer wants in a product. This information should help you decide what features to build into your brands in order to satisfy these wants. Many executives have difficulty coming to grips with this responsibility.
+
+The problem is that customers buy benefits, not features. Every day, the executive must deal with components - their design, costs, production, availability, compatibility, etc. In most cases, the customers do not care if the manufacturer includes component A or component B. All they want to know is, will it do the job?
+
+For this reason, you must understand the value, utility, or benefit of each and every component or feature that could be built into your brands. You cannot design a brand without this knowledge.
+
+For your Market Opportunity Analysis, we recommended that you start with the benefits (wants and needs) most desired by a target segment and then speculate on the features or components which would provide these benefits. For the Brand Design decision, we recommend that you undertake the flip side of that task. That is, start with the features and speculate on the benefits delivered by each.
+
+Start by doing some homework in the real world on the product category. Find out the usefulness of each feature and to whom it would be of use. Not everyone will find each feature to be equally desirable. Then, take the list of the features available to you and write a brief description of what need is fulfilled or benefit provided by each feature. You are essentially building a ladder from features to benefits.
+
+Next, match up the list of benefits provided with the list of benefits sought. This matching process should enable you to identify which features are likely to appeal to which segments. While the exercise is not foolproof, it should provide you with a logical basis for designing brands.
+
+While matching up benefits and features, you must also Consider the Price the Market Will Bear.
+
+Consider the Price the Market Will Bear Back to chapterBack to contents
+Your brand design decision must also include consideration of the price the market is willing to pay. There is always a price/performance trade-off. Higher performance features will generally cost more than lower performance features. Will the target market pay for the additional capability?
+
+Your MOA should help you to determine how sensitive your target market is to price versus performance. Consider establishing a price point for each segment and then designing a brand within that constraint. A good rule of thumb is to multiply your total materials cost for the component times two or three to obtain an estimate of what the brand would retail for. (See the total component cost on the brand design screen.)
+
+If the projected brand price is higher than you think the market will bear, you should consider scaling back the design to fit the price. In some cases, you may even be able to add features and stay within your price objective. This issue of pricing will be discussed in more depth under the topic of Brand Price, but it cannot be ignored during your brand design efforts.
+
+Test Market Back to chapterBack to contents
+After you have completed your initial brand designs, it will be necessary to test market your brands and your suggested brand prices. Remember that your market survey is based upon an abstract evaluation of theoretical benefits. Until your customers see, touch, and use your product, there is no way to know for sure how attractive they will find it.
+
+To bring this point home, suppose you were asked what you would like to have in a candy bar. You could probably tell the researcher how much you liked caramel, chocolate, nuts and so forth. A manufacturer might then develop four or five versions of your "preferred" candy bar. In a taste test, there is a good chance that the one you "really" like is different from the one they might have predicted from your survey responses.
+
+Until they combine the ingredients into a particular formula and you taste it, they are simply making an educated guess about your preferences. In the same vein, the market survey will help you make a good educated guess, but it is still necessary to test market your brands to determine true consumer preferences.
+
+You should start with the expectation that you will have to revise your initial brands within the first six to nine months. With so little experience in this market, you will be lucky to have a highly rated brand right from the first.
+
+As a point of comparison, Apple Computer withdrew its pioneering Lisa brand from the market within seven months and introduced the far more successful Macintosh line. It is not uncommon for a new venture firm to upgrade its products almost immediately after launch. It is virtually impossible to have fully anticipated all of the ways in which a product can be used (or misused). The objective of your test marketing will be to learn what you did right and what needs to be improved and then to quickly revise your design to better match end-user requirements.
+
+Another caution to keep in mind is that more is not always better. Some executives might think they could appeal to lower-end segments by simply cutting the price on a brand with extra features. This tactic will not always work.
+
+To illustrate the point, suppose you placed a scientific calculator with 36 special function keys on sale alongside a standard four-function calculator. Both are sold for the same price. You would find that a good number of customers would purchase the simpler machine. That is because there is a hidden price in the more complicated calculator.
+
+Customers must spend the time to figure out how to work with it. They might also worry about hitting the wrong keys or in the wrong order. The scientific calculator could be intimidating. The point is that for some segments simplicity will be one of the benefits sought. Consumers would not necessarily rate the more sophisticated brands as better.
+
+To further illustrate this important point, consider the seven hypothetical response functions:
+
+More of a feature is always better. This is the assumption most engineers and product managers make; and in a large number of cases it is true. For example, a faster processor on a PC will create increasing excitement and product use among calculation (engineers) and data intensive (order processors) end-users. Greater miles per gallon, battery life, insulating capability and rpm are almost always desired. However, it is wrong to assume that more of a feature is always better. Some consumers have different response functions where more does not add value and may even detract from it.
+More of the feature will add value to a brand up to a point, but then it ceases to add anything more. For example, TV manufacturers have found that the addition of stereo sound to a TV created lots of enthusiasm (almost 90% of all primary TVs sold today have stereo sound). However, adding further sound capability (adding a broader range of sound reproduction or more powerful speakers) creates no further excitement or additional sales. Some consumers feel this way about modem speed or storage capacity on a hard drive. Others reach a plateau with the number of channels on cable TV, the number of speeds on a bike, the horsepower of an engine or the durability of a fabric.
+More of the feature will add value, up to a point and beyond that point, more of the feature will detract from the experience or enjoyment. For example, romance in a movie can be enjoyable, but too much romance can be overbearing. And, attentive waiters and waitresses can be an asset to a restaurant, but they can quickly become a nuisance to customers if they constantly interrupt the dinner conversation. And, the amount of carbonation, syrup and water in a fountain drink all have tight tolerances where too much or too little is undesirable.
+A little of a feature is just right, more only takes away value. Some consumers do not want anything more on a calculator than the basic four functions: addition, subtraction, division and multiplication. Each additional function only adds to confusion and frustration. In other cases, increasing the number of gears on a bicycle, the length of a manual, the amount of fat in prepared foods or the number of commercials on a TV show will reduce satisfaction for some consumers.
+Any amount of the feature is bad. Some consumers feel this way about violence in a movie or TV show. Other consumers are turned off by: sugar or caffeine in soft drinks, the use of prepared foods in a restaurant, plastic wrapped fruits and vegetables in the produce department or polyester in clothes.
+Little interest until threshold is crossed. In cases of many new products, interest remains low until the capabilities of the product reach a critical level. For example, the personal computer did not become a household tool until Windows 95 made it easy enough for the average person to use it. Similarly, the Internet did not achieve widespread adoption until Netscape came on the scene and made very easy to browse the World Wide Web.
+The presence of some features in a product can have no effect on consumer excitement. Adding high grip pedals or high grip tires to a bicycle is not likely to cause even a ripple of excitement in customers who are only concerned about a bike that is comfortable or easy to ride. Other consumers might be indifferent to colorful brushstrokes, lights, or decals.
+In the current exercise, one of your tasks is to ascertain what the response function looks like for different features for different segments. You can deduce segment preferences and response functions by studying end-user reactions to the various brand offerings on the market. Try to determine if more or less of a feature improves end-user judgments. Keep in mind that end-user preferences may or may not match your expectations or prior assumptions. In fact, what you think makes sense is not important. The objective is to give the end-users what they want, not what you think they should want.
+
+Comment:
+The goal of marketing is to select features that add value to end-users. This goal must be balanced against the goal of minimizing production costs in order to be able to offer competitive prices and realize substantial profits for the firm. Therefore, a secondary goal of marketing is to determine which features add the greatest value and which add the least.
+
+If you find indifference between alternate models of the same component, or one is only slightly preferred, perhaps the model which is used in other brands should be selected. Thus, marketing must understand these response functions so that they can recommend features which can be standard across multiple brands and which must be unique.
+
+Brand Name Back to chapterBack to contents
+At the same time, you are developing your brand portfolio, it is important to choose a brand names. Even though this decision will not affect demand generation in Marketplace, it should not be taken lightly. A name can help or hinder communication. A well-chosen name may convey the totality, essence, image or even, simply, the function of the brand.
+
+The brand name might attract attention and serve in a promotional capacity, or it can be a clever play on words that makes people smile or otherwise stop to notice the name. For example, Excel is a spread sheet program by Microsoft that says nothing about the product, but might communicate to the user that the user can "excel" by using the product. Other names that denote excellence might include the Intel Pentium computer chip, Infinity automobiles or Craftsman power-tools.
+
+Fun brand names include PlayStation (a video game console), Red Robin or Swiffer. Brand names which convey the activity or functional use of the product include the Fitbit (a small activity tracking device worn on your wrist, intended to help users get into shape), Mr. Clean (household products) or Dunkin Donuts.
+
+Sometimes, brand names have no meaning whatsoever, but develop an identity from use. A good example of such a brand name is Kleenex tissues. And finally, many companies use numbers or letters in their brand names to indicate the difference between later versions and early ones (ex. Windows 11 versus Windows 10), or between economical models (iPhone 13 Pro Mini) and full performance models (iPhone 14 Max).
+
+A brand name will project an image of the firm. Careful attention to the name can ensure that the right kind of image is projected.
+
+Finally, brand recognition can also help boost sales. If a previous brand named "Titan" had good sales, and you now want to modify the brand to include new R&D, you will want to retain at least 60% of the original name so that customers will recognize it as a continuation of the "Titan" line. You could name it "Titan II", "Titan 200" or something similar. This will not guarantee you any sales, but it does improve your chances by playing off the loyalty already created with the original "Titan" brand. Having extensions such as these will enable you to create a "product line" that is recognized as have a common core value plus a signal that there are important differences between models.
+
+Brand Loyalty Back to chapterBack to contents
+Brand loyalty is expressed as positive feelings towards a brand and a desire to purchase it now and in the future. Brand loyalty is acquired by providing products that meet and exceed the customer's needs and wants. It can be built up through
+
+brand designs that deliver the most value,
+pricing that fits the customer's pocketbook,
+advertising that appeals to their needs and wants, and
+informed and responsive sales and service personnel.
+Brand loyal customers are less price-sensitive and less affected by competitor product enhancements, advertising appeals, and service enticements.
+
+But loyalty is not unassailable. It can get strained and even overcome if competitors have significant advantages in any of these areas.
+
+There are also lessons here for you as you challenge competitors. For you to weaken the brand loyalty of their brands, you must be substantially better in value, price, advertising, and sales and support. Small improvements over what your competitors offer will not cause many of their customers to switch their loyalty to you.
+
+E. Advertising Decisions Back to contents
+Planning the Advertising Program
+Ad Copy Design
+Deceptive Advertising
+Media Placement
+Advertising Effectiveness
+Effective advertising is an important component of your marketing mix. Planning the advertising program for your firm will require you to consider the following:
+
+Ad copy design
+Media placement
+Advertising effectiveness
+Learning Objective
+The purpose of this advertising effort is to force you to think through the tradeoffs inherent in advertising and promotion planning and to see how advertising relates to the broader strategic decisions of the firm. To succeed at advertising design, you must understand what each segment wants in a product and then design an ad that effectively appeals to those needs.
+
+Similarly, how much weight should be given to advertising within the marketing strategy of the firm? In terms of marginal returns, which is more important: expanded advertising, further brand development, lower prices, or more salespeople?
+
+The size of your advertising budget relative to other expenditures implies a certain set of priorities. To make effective decisions, you must know your investment options, estimate their payoffs, and consciously establish your strategic priorities. You will find that these priorities will change as your firm and the industry pass through the introductory stage of the product life cycle, to the growth stage, and on into maturity.
+
+Planning the Advertising Program Back to chapterBack to contents
+Advertising is an important part of the marketing mix. It can be used to inform, persuade, and reinforce the market relative to the qualities of your firm, your brands, and your distribution system. An effective ad campaign can help you to outsell your competition, even if some of your brands are not perfectly positioned relative to the needs of your customers.
+
+Effective and sizable investments in advertising also create barriers to entry. If the price to overcome your name recognition and buyer loyalty is sufficiently great, competitors will have to think long and hard before they challenge you in your markets. In short, advertising can make or break an otherwise effective marketing strategy.
+
+The major disadvantage of advertising is that it is an expense, and not an asset. Once it is spent, you have nothing tangible to show for it. There is no tangible product, sales channel, or production facility to show to investors.
+
+There is simply a higher probability that customers will buy your product; and it is very difficult to quantify how that probability has changed as a result of advertising. Given the serious cash flow problems of new ventures, most entrepreneurs have great difficulty investing in advertising, no matter how important it is.
+
+The advertising decision with which you are faced is composed of these parts: Advertising Copy Design, and Advertising Effectiveness. For advertising copy design, you must select which benefits you wish to stress in your ads and the priority to be given to those benefits in terms of message emphasis. Advertising effectiveness consists of estimating how well you are reaching your target markets, especially in relation to your competition, and how you can improve the advertising response.
+
+Ad judgment is segment-specific. You must design the right message in order to persuade each segment.
+
+The size of your company's advertising investment compared to that of your competitors will also influence total advertising effectiveness. If your competition outbids you for the attention of your customers, they will take market share away from you.
+
+With patronage advertising, the objective is to attract customers to the company without reference to a particular brand. The emphasis is on the company as a whole. You are able to influence the number of customers being drawn from each segment by altering the relative emphasis of your advertising to match the message preferences of the different segments.
+
+Once the customers have selected your firm as one of their preferred suppliers, brand advertising takes over. The different brands compete for the attention of the customers who are now predisposed to buy from your firm. Brands that have higher name recognition or have been pre-sold will have higher sales potential.
+
+Ad Copy Design Back to chapterBack to contents
+The copy design decision begins by reviewing the needs and wants of your target market and then designing an advertising message that should appeal to the segment. To help visualize this responsibility, imagine you are working with the account representative from your newly employed ad agency.
+
+The advertising agent is skilled in the mechanics of copy preparation and media placement. He or she also has access to the creative talents of copywriters, graphic designers, photographers, models, and so forth. However, you know more about your particular business than the account rep or anyone else at the ad agency.
+
+You must provide the agency with the content of the advertisements. You must decide on the message or theme to be conveyed. The ad agency will then take your guidelines and create an attractive advertisement that conveys the intended message.
+
+The Marketplace decision template lists the possible benefits that are thought to be important to various market segments. To assist the advertising agency in copy preparation, you must select and prioritize the benefits you want stressed in your ads. You must decide what is the most important point you want conveyed in an ad.
+
+You must then decide on the second most important benefit, the third most important, and so on. Taken in combination, the selection and order of benefits should serve to position your firm and products to match the needs and wants of your target markets.
+
+If you are unsure about how advertisements are designed, try studying ads for real brands in current periodicals. In most cases, you will find an ad contains a multifaceted message. That is, several major and minor points are addressed in the ad. These points highlight needs of the consumer or benefits of the brand or company.
+
+You can almost rank-order the different points made in the ad by the size of type and their placement on the page (i.e., large bold letters at the top versus small letters in the lower right). You should also see the identification of a specific brand or company name. The name is probably not the most important point in the message.
+
+There is probably some key benefit that gets top billing. All of these factors combine to create a message to a targeted audience. Again, visualize the marketing or brand manager who approved the content of these ads. You will be fulfilling that responsibility.
+
+As you design each ad, keep in mind that the importance of the benefits will vary by segment. An ad designed to one segment will not appeal to other segments.
+
+Thus, you must design a separate ad for each segment to be targeted. Past experience also suggests that ads should not convey too many benefits in the message. As the number of benefits increases, ad clutter goes up, and message effectiveness goes down.
+
+Finally, placement of the brand name in the number 1 or number 2 position in an ad will not work as well as you might think. No one knows your brand or what it stands for in the early quarters of your business. As an attention getter, it is less effective than a very important benefit that a segment is looking for. The importance of including the brand name in the ad is that you want customers to associate the brand name with these benefits. Therefore, lead the ad with benefits that the customers want most and include the brand name lower in the list to build the association between the brand and the benefits desired by the segment.
+
+In summary, you must build the content of an ad by manipulating three variables at the same time:
+
+What to say in the ad (which benefits are important to a target segment).
+How much to say in the ad (how many benefits to mention in the ad).
+The priority of the content (what should be given top billing, second, and so forth).
+Long ads are not necessarily better than short ads. Experimentation will be necessary to optimize the ad design. The addition or deletion of a benefit or the rearrangement of the message priorities could make a noticeable improvement.
+
+Even modest improvements in ad design can greatly extend your advertising expenditure. For example, by improving an ad's rating from 60 to 90 (out of a possible 100 rating points), your advertising effectiveness jumps by 50% ((90-60)/60). Alternatively, better ad designs will allow you to spend less on advertising with the same effectiveness.
+
+In making the ad copy design selection, be certain that you can document the benefits you select. In other words, do not engage in Deceptive Advertising because you may be subject to penalties.
+
+Note the cost to design or modify an ad. You can modify the same ad multiple times in the same quarter and you will only be charged once. So, if you create ad "A" in quarter 3 and then decide to modify ad "A" while still in quarter 3, you will only be charged once, but if you modify ad "A" once and ad "B" once, you will be charged twice. If you enter the ad design screen and decide you do not want to design/modify the ad, then use the cancel option so that you will not be charged.
+
+Deceptive Advertising Back to chapterBack to contents
+In designing your ads, be careful to select claims that you can document. All ad claims must be supportable by the market research data for the region or city in which the ad is run. For ads that do not mention a brand name (Company Ad), you must have at least one brand that satisfies the claim. To design an ad for a specific brand, choose "Mention brand name" from the ad features list. This will allow you to select a specific brand to be mentioned in the ad. To design a company ad, do not choose "Mention brand name".
+
+Ties (or having the same conditions) will allow two or more firms to make a superlative claim. For example, more than one company can have the same brand judgment rating for the Recreation segment, which allows both companies to use the "Highest rated Recreation bike" ad claim.
+
+For example, if you run an ad in quarter 4 which includes the claim "Lowest price in town", then you must be able to document that your company has a brand available for sale in quarter 4 that is priced as low as any competitors' brands were in quarter 3.
+
+It is permissible to test market any conceivable ad copy during the first quarter of sales without the worry of a deceptive advertising lawsuit. Starting with the second quarter of sales, all claims must be supportable.
+
+Note: Include any applicable rebates for price comparisons.
+
+Caution: All ad claims must be supportable by the market research data for the region or city in which the ad is run. If a brand is modified, any market research data based on the original brand is not valid for the newly modified brand.
+
+Ad Claim Requirements
+The following list contains all of the possible ad claims and the corresponding technical requirements for each claim.
+
+Featured Bike
+Mention brand name: There are no specific requirements for this claim.
+Sales & Service
+Local sales & service: Company must have store staffed by a sales person trained in the "Service" specialty.
+World sales & service (all 4 markets): Every region must have at least four stores, each staffed by a sales person trained in the "Service" specialty.
+Best in Class
+Highest rated Recreation bike: Brand must have been the highest rated for the Recreation segment in the previous quarter.
+Highest rated Mountain bike: Brand must have been the highest rated for the Mountain segment in the previous quarter.
+Highest rated Speed bike: Brand must have been the highest rated for the Speed segment in the previous quarter.
+Price Sensitivity
+Special price rebate: A rebate must be offered for the brand.
+Lowest price on the market: Brand must be priced as low as all competitor brands were in the previous quarter.
+Situational Pictures
+Picture of riders on a greenway: There are no specific requirements for this claim.
+Picture of a rider on a steep trail: There are no specific requirements for this claim.
+Picture of road race: There are no specific requirements for this claim.
+Delivered Benefits 1
+Added safety - reflectors everywhere!: Brand must include "Accessories: Reflectors (front, back, spokes, pedals, wheel rims)" component.
+Carry your stuff easily: Brand must include "Carriers: Attractive plastic basket (Comfort)" or "Carriers: Large mesh folding tote basket (Comfort)" component.
+Carry more stuff, more easily with a tote basket: Brand must include "Carriers: Large mesh folding tote basket (Comfort)" component.
+Make your mark-colorful decals styled to your biking spirit: Brand must include "Decals: Bright colorful styled to each segment & frame" component.
+Track your ride & fitness: A computer that does it all: Brand must include "Accessories: Performance bike computer" component.
+Keep your head high - comfort straight handlebar: Brand must include "Handlebars: Comfort straight (Comfort, Rugged)" component.
+Best handlebar for comfort & steering (carbon fiber riser): Brand must include "Handlebars: Carbon fiber riser (Comfort)" component.
+Power through difficult terrain with power handlebars: Brand must include "Handlebars: Power straight (Rugged)" component.
+The ultimate edge - sleek, airfoil handlebars: Brand must include "Handlebars: Carbon fiber aerodynamic drop down (Aerodynamic)" component.
+Carbon Fiber Qualities
+Carbon fiber quality at a great price: There are no specific requirements for this claim.
+Enriched carbon fiber - lighter, stronger, & affordable: Brand must include "Carbon fiber material: Enriched - lighter, stronger" component.
+Core Values
+Tech news: carbon fiber bikes just got cheaper: There are no specific requirements for this claim.
+A tailor-made bike just for you! 3D printing: There are no specific requirements for this claim.
+Elite look - a ride of distinction: There are no specific requirements for this claim.
+Enjoy your ride - carbon fiber light: There are no specific requirements for this claim.
+Have an adventure on a carbon bike!: There are no specific requirements for this claim.
+Go anywhere on a durable carbon bike: There are no specific requirements for this claim.
+Mountains are no longer difficult: There are no specific requirements for this claim.
+Motivators
+The gym is wherever you take it: There are no specific requirements for this claim.
+No pain, lots of gain: There are no specific requirements for this claim.
+Lots of fun to ride: There are no specific requirements for this claim.
+Delivered Benefits 2
+Smooth the ride with full suspension shock absorbers: Brand must include "Suspension/shock absorbers: Full suspension (front and back) (Comfort, Rugged)" component.
+Grab the path with high tread tires: Brand must include "Tires: Mountain - high grip (Comfort, Rugged)" or "Tires: Mountain - super traction (Rugged)" component.
+Hard is easy ... Super traction tires: Brand must include "Tires: Mountain - super traction (Rugged)" component.
+Roll fast with racing tires: Brand must include "Tires: Racing - fast (Comfort, Aerodynamic)" or "Tires: Racing - sleek, very fast (Aerodynamic)" component.
+Lightning fast with sleek racing tires: Brand must include "Tires: Racing - sleek, very fast (Aerodynamic)" component.
+Have it all - hybrid tires: Brand must include "Tires: Hybrid - road and off-road" or "Tires: Hybrid - cushion" component.
+Ride easy with comfort tires: Brand must include "Tires: Hybrid - cushion" component.
+Easy riding on a comfort seat: Brand must include "Seat: Polymer gel comfort (Comfort, Rugged)" component.
+Ride in total comfort: shocks, seat, tires, handlebar, motor: Brand must include shock absorbers, comfort seat, comfort tires, comfort handlebars, and electric motor.
+Take it easy, let the electric motor do the work: Brand must include "Accessories: Electric motor system for pedaling assistance" component.
+Lawsuits
+You are free to challenge any ad that a competitor places in the media (excluding the ads for the first quarter of sales). The process begins when you issue a formal complaint to the Federal Trade Commission (instructor) that a competitor has engaged in false advertising. At the same time you present the FTC with the complaint, you must submit a copy to the president of the firm(s) named in the complaint. The complaint must be filed within 24 hours of the quarter being processed (or as specified by the instructor). The complaint can only address ads that were run in the previous quarter, any ads that were run prior to that have passed the due date required for filing. Each claim must be filed in a separate email.
+
+In the lawsuit, the plaintiff must provide the following information for each claim:
+
+name of the company being sued
+name of the ad being cited as false
+name of the brand linked to the ad
+where the ad was placed (name of media)
+quarter in which the ad was run
+the specific claim which is believed to be false
+the reason the claim is false (the facts which make the ad false)
+The defendant has 48 hours after the quarter has been processed, to respond to the claim (or as specified by the instructor).
+
+If the defendant wishes to challenge the lawsuit, then the following information must be provided:
+
+name of firm filing the lawsuit
+name of the ad being cited as false
+name of the brand linked to the ad
+where the ad was placed (name of media)
+quarter in which the ad was run
+the specific claim which is believed to be false
+the reason the claim is true (the facts which make the ad true)
+The FTC will then review the charge(s) and the defense. The FTC will deliver their ruling prior to processing of the current quarter. Their decisions are final.
+
+Penalties
+If a team is found guilty of multiple deceptive advertising claims in the same quarter, it shall be penalized as a single offense. The FTC reserves the right to adjust these penalties as it deems necessary for fair game play. Using a claim which has been previously prohibited as the result of a deceptive advertising penalty is itself considered deceptive advertising and is subject to further prosecution.
+
+If the firm is found to be guilty of deceptive advertising, then, the penalty will be as follows:
+
+First offense:
+The defendant will not be allowed to make the claim for the next 4 quarters. No other penalty is allowed.
+Special note: If a company's first offense occurs during the last quarter of the game, it shall be penalized as the second offense.
+Second offense:
+The defendant will be fined an amount equal to 5% of its total revenues for the quarter in which the false ad was run. The money will be distributed to the other teams in the industry in such a way as that each team will receive 1/n of the fine, where n equals the number of firms in the industry. The firm filing the winning lawsuit will receive 2/n of the fine. Also, the defendant will not be allowed to make the claim for the next 4 quarters.
+Third offense:
+The fine will be 10% of the defendant's total revenues for the quarter. Also, the defendant will not be allowed to make the claim for the next 4 quarters.
+Fourth offense:
+The fine will be 20% of the defendant's total revenues for the quarter, and so on.
+Note: These are the default FTC rules provided as a guideline for the instructor. The instructor may choose to modify these rules to fit the particular needs of each game.
+
+Media Placement Back to chapterBack to contents
+The second step in the advertising decision is media planning. The decision template lists your markets and ads. After creating your ads, you must decide where to run each ad and how many times the ad will run during the quarter.
+
+The local media represent a "shotgun" approach to advertising. The expenditures represent a potpourri of advertising from spot television and radio to newspaper ads. While there are some differences between segments, the local media are thought to cover all segments of a given metropolitan area. (This also means that if you have nothing to sell to one or more segments, then that portion of your coverage is wasted.)
+
+As a general rule, the more often you advertise, the more likely you will move a potential customer through the awareness, interest, decision, and selection sequence.
+
+However, this rule has three limitations:
+
+After a certain point, additional insertions start to result in diminishing returns.
+The ads must be on target, both in design and placement, to be effective.
+Your advertising will be judged against the quality and quantity of advertising of your competition. If your competition does a better overall job than you do, they will capture a larger share of the market.
+The ultimate decision that you must make in media planning is how much to invest in advertising. Authors of marketing textbooks usually identify four methods of setting advertising budgets: all you can afford, competitive parity (i.e., the same amount as your strongest competitors), percentage of sales (i.e., 5% of projected sales), or objective and task.
+
+Theoretically, the objective and task method is the most attractive because you must spell out your objectives, assumptions, and the expected payoff of the amount of money invested. Practically speaking, the first three methods help to establish benchmarks for comparison between brands and competitors and should be part of the decision.
+
+A final point to consider in advertising planning is your firm's advertising effectiveness. The first sales outlet to enter a city will generally encounter buying resistance on the part of the end-user. Local buyers do not know who you are, what you have to offer, or why they should buy from you.
+
+When you are the new kid on the block, it will usually take a quarter or two for customers to become familiar with your sales outlet and the brands you carry. Heavy advertising will prove wasteful. A more moderate budget is preferred in order to move potential customers from the awareness stage to a purchase decision. Later entrants into the market should not experience this startup problem, although they must overcome the buyer loyalty built up by the pioneering firm.
+
+Breakdown of media discounts
+The media placement cost for each ad design includes a frequency discount: the more insertions you purchase for your ad, the lower the cost per insertion.
+
+Formula:
+
+Media placement cost per ad design = Cost per ad insertion * Number of ad insertions ^ Elasticity for frequency discount
+Elasticity for frequency discount = 0.90
+
+Sample Calculations:
+
+Sample cost per ad insertion = 5,000
+Number of ad insertions = 10
+Media placement cost per ad design = 39,716.41
+Cost per insertion = 3,971.64
+Sample cost per ad insertion = 5,000
+Number of ad insertions = 100
+Media placement cost per ad design = 315,478.67
+Cost per insertion = 3,154.79
+Advertising Effectiveness Back to chapterBack to contents
+It is important to estimate how well you are reaching your target markets, especially in relation to your competition. While it is difficult to estimate advertising impact and financial effectiveness, it can be done with a little work. First, you must estimate the advertising impact of the media. To obtain an estimate of advertising financial effectiveness, divide the estimate for media impact by the advertising budget.
+
+To estimate impact for advertisements, multiply 100, by the frequency with which the advertisement is run, times the judgment rating of the advertisement.
+
+Impact of an advertisement = 100
+* the number of times the advertisement is run
+* the judgment rating of the advertisement
+
+By repeating these steps with different media plans, you can compare the advertising effectiveness of each and determine which plan will provide the best return for the advertising expenditure.
+
+Equally important, you can compare your advertising impact and financial effectiveness to your competitors. You may be surprised that the firm with the largest advertising budget may not have the most effective advertising campaign.
+
+Please note, advertising impact and financial effectiveness must be computed separately for each segment. That is, it is segment-specific.
+
+F. Internet Marketing Back to contents
+Internet marketing, also called online advertising or Internet advertising, is a form of marketing and advertising which uses the Internet to deliver promotional marketing messages to consumers.
+
+Internet marketing includes organic and paid search engine marketing (SEM) and social media marketing.
+
+Web page content
+To create the content of your web pages, you can use the ads that you have designed for media placement. These advertising messages will be reformatted to fit the web layout. You can go to Ad Design to see how your ads look in a web page format or in a paid ad format.
+
+Keywords
+Keywords are the words that potential customers type into a search engine to look for any product or service. There are specific keywords that are frequently used to search for lightweight or carbon fiber bikes. These keywords need to be incorporated into your web page.
+
+Organic Search Engine Marketing
+Organic search engine marketing (SEM) relies on internet search engines listing your website in organic search results. These are the results that do not contain paid ads. They list the websites with content that is most relevant to the search terms. When someone uses a search engine to look for a lightweight bike or a carbon fiber bike, the search engine presents the organic results with websites that are the most relevant to those search terms.
+
+Paid Search Engine Marketing
+Paid SEM allows you to place an ad at the top of the search results page. Every time someone clicks on a paid ad, the search engine deducts a small fee from your budget. This is called pay-per-click and it is how search engines make money on paid advertising.
+
+Social Media
+Social media facilitate social interaction among people in which they create, share, or exchange information and ideas in virtual communities and networks. Data indicates Internet users spend more time with social media sites than any other type of site.
+
+Social media come in many different forms. The most relevant ones for your business include social networking, blogs, newsletters, and videos.
+
+Search Results Page
+Every time a person does a search on the Internet, they are presented with a Search Results Page. The Search Results Page lists all web pages that are considered to be relevant to the search terms entered by a potential customer.
+
+The search engines do not list the entire contents of a web page on the Search Results Page. It would take too much space and reduce the efficiency of presenting relevant web pages.
+
+To save space, the search engines only list the first three benefits of a web page, plus a link to the web page. If someone clicks on the web page link, he or she will see the complete page, with all of its benefits. However, they will not do that unless the first three benefits are sufficiently enticing that they want to know more.
+
+The same is true for a paid ad.
+
+Therefore, you should choose these benefits very carefully when creating your ad content. They need to be benefits that are very important to your potential customers and will cause them to click on your link and learn more.
+
+Interpreting Internet Marketing Results
+The Click number is the most important number on the page. It indicates how often searchers clicked on the link when it was displayed in the search results. In each case, the people doing the searches were taken to your full web page. It is only at that point that your persuasive message can be fully conveyed. The more clicks, the better your chances of making a sale.
+
+The Number of Searches affects the number of clicks. The more often that potential customers search for a carbon fiber or lightweight bike, the greater your sales potential. You do not have much opportunity to directly affect the number of searches since it is determined by raw market potential and the total marketing efforts of your industry (all suppliers).
+
+The most important factor in determining the number of clicks at this stage of your SEM is the quality of the web page. Search engines have ways to judge web content quality. The ad judgment is the closest indicator that you have for assessing the quality perceived by the search engines. You can improve the number of clicks by improving your ad content, and therefore, ad quality or ad judgment.
+
+The Budget Used is the final amount you were charged for a paid advertisement. The Budget Used may be different than the Budget Planned. There are several factors that could cause a difference.
+
+First, the amount that you payed depended upon the number of searches in a segment. The more often that people searched for a lightweight or carbon fiber bike, the more opportunities for people to click on your ad. The opposite is also true. If you budgeted more money than was needed, the search engines reduced your expense to what was needed.
+
+Second, the number of clicks on the ad depended upon the quality of the message. A more appealing ad will result in more clicks, and therefore, more deductions from your budget. Better paid ads = more clicks = more money spent.
+
+Third, if you did not budget enough money for the actual number of clicks that you qualified for, you ran out of money. At that point,
+
+your ad was removed from the search results page
+your expense was equal to the budget you set; and
+you ended up with fewer clicks than were possible.
+Fourth, if your budget ran out of money and a competitor budgeted more money than you, its paid ad was visible longer on the search results page. As a result, the competitor's ad probably saw more clicks to its web page (assuming the ads were comparable).
+
+Finally, it is not possible to know exactly how much money was budgeted by a competitor for a paid ad. All you can know is how much was spent.
+
+G. Store Decisions Back to contents
+Territory Development
+Store Management
+Brand Selection
+Brand Price
+Price Elasticity
+Competitive Prices
+Price Rebate
+Sales Order Priority
+Sales Force Management
+Number of Salespeople
+Target Market Specialty
+Distribution is one of the least understood elements of the marketing mix. Most of us can relate to brand design, pricing, and advertising decisions because they impact upon us as consumers of household and personal goods. It is rare for most of us to have any experience with distribution.
+
+When we walk into the grocery store, we assume that the detergent, milk, cereal, or whatever else we want will be there, because it has always been there. Who thinks about how it got there or why one brand is on the top shelf and another is on the bottom, or why one brand is on special but not another, or even why one brand is carried but not another? It is the job of marketers to worry about these decisions and many more like them.
+
+There are two components to distribution or sales outlet decisions. First, you must consider Territory Development by evaluating the sales potential of each city in the world market and decide upon your preferred order of entry.
+
+Second, you must make Sales Outlet Management and Sales Force Management decisions by deciding what brands to carry, prices, and sales force size and allocation.
+
+Learning Objectives
+The primary objective of the sales outlet management effort is to force you to deal with demand management. Your market orientation can profoundly affect the complexity of your sales outlet decisions and potential payoffs. If you consider only the consumer's viewpoint, the task of making sales outlet decisions is manageable. Through careful study of the relative contribution of each decision to sales and profitability, it is possible to find the right combination to maximize short-term and long-term profits.
+
+A second objective is to give you experience in sales outlet planning. Brand assortment selection, price determination, priority setting and sales staff planning are all common selling activities. While limited in comparison to real-world decision-making, they provide a realistic experience in dealing with the basics of the Sales Force Management.
+
+A third objective is to give you experience in translating customer needs and wants into brand-design specifications. Sales outlet managers are essentially buying agents for the end-user. Their job is to anticipate and understand end-user needs and assemble an assortment of brands that will satisfy these needs. Successful sales outlet managers cannot afford to simply take what is offered. They must be able to recognize a strong performer from the rest and possibly become involved in the brand-creation decision itself.
+
+Finally, the objective of the pricing effort is to give you experience in making pricing decisions which simultaneously consider consumer preferences, competitive pressures, profitability, and return-on-investment variables. The pricing exercise should help you to understand the multidimensional nature of the pricing decision. Too often, business people consider only one variable at a time. They might begin by focusing on markups over cost, or what the market will bear. At other times, they may concentrate on competition. A few may consider the margin - volume tradeoff and a target return on investment. All of these variables must be considered simultaneously.
+
+Concepts Emphasized
+Sales outlet management: Manipulation of brand assortment, pricing, sales priorities and sales force strategies to accomplish sales and profitability objectives.
+
+Financial strategy: Margin versus turnover operation.
+
+Brand evaluation: Assessing end-user needs and determining the best brand designs to satisfy needs.
+
+Brand assortment: Depth of product line.
+
+Forecasting: Predicting unit sales by brand based upon market potential, current market performance, the predicted decisions of competitors, and an evaluation of one's own performance versus the predicted performance of others.
+
+Postponement: Maximizing decision flexibility and minimizing risk by waiting to see what happens.
+-versus-
+Speculation: Early commitment of resources in order to gain a cost advantage and a jump on competition.
+
+Cash-flow management: Understanding the sources and uses of money and how various business decisions affect the availability of cash.
+
+Pricing strategy: Role of price to achieve corporate objectives relative to customer, competition, and profitability considerations.
+
+Pricing tactics: Penetration pricing, skim-the-cream pricing, price lining, and so forth.
+
+Price computation: Overhead and variable costs, cost allocation among brands, margins.
+
+Financial accountability: Return on investment requirements and need for continued corporate financial support.
+
+Pricing economics: Monopoly (only brand with new technology), oligopoly (one or two competitors), or monopolistic competition (everyone has it, use other variables to differentiate brand).
+
+Price elasticity: The responsiveness of a market segment to a change in price.
+
+Demand management: Manipulation of sales variables to control demand relative to supply and to maximize profitability across available brands.
+
+Decision-making: Evaluation of the pros and cons of available investment options and a commitment of resources to an uncertain future.
+
+Territory Development Back to chapterBack to contents
+Your territory development decision is among the more straightforward decisions with which you are faced. Each city has a different sales potential or number of prospective buyers. In addition, there are differences in the composition of the market segments.
+
+One metropolitan area may have a greater proportion of one segment than another city. These differences in market composition will influence the sales volume of the different brands on the market.
+
+Your MOA should provide you with a rough estimate of the sales potential by segment and by geographic market. Determine which markets have the highest concentrations of potential customers in your target segments. With this information, you should be able to establish a priority list of geographic markets.
+
+As you enter these markets, keep in mind that actual sales will be less than market potential, especially in the early stages of the industry's product life cycle. Unit demand will depend upon how well the needs of each target market are fulfilled.
+
+There are other concerns beyond market size to keep in mind as you open sales outlets. The first is operating expense. The better markets tend to have higher operating expenses. These include the setup costs (leasehold improvements, outlet equipment, furniture, and supplies), quarterly lease rates, and sales force salaries. Thus, the greater market potential of these markets must be balanced against the greater cost of serving them.
+
+The second factor affecting the location decision is competition. Territories with high demand are likely to attract more companies, and competition is expected to be stronger. Markets with lesser demand may attract fewer competitors.
+
+Another competitive consideration is that early entrants will have the pioneering advantage of building unchallenged customer loyalty, but they pay a price in low initial sales due to a lack of customer awareness of the product category. Late entrants into the market avoid the delays in market recognition but may require one or two quarters to overcome the brand loyalty factor.
+
+Because your sales outlet decisions will impact many other parts of the company, be sure to coordinate the work across all functional areas.
+
+In summary, the territory development decisions are influenced by market potential, competition, operating expenses and advertising economies. The sales appeal of the larger markets must be balanced against the higher overhead to enter and compete in these markets. Finally, each firm should have a basic plan regarding the sequence of markets to be entered. As information becomes available regarding the decisions of the other companies, this plan should be revised.
+
+Identify the top markets by segment and then decide upon the order of marketing. Decide which sales outlets will be open in quarter 2, which will be open in quarter 3, and so forth. When you are finished with this priority list, you should have a timeline of sales outlet openings by quarter.
+
+As you enter each new market, you will want to address Sales Outlet Management decisions. These decisions can influence demand.
+
+Store Management Back to chapterBack to contents
+Brand Design, Brand Pricing, and Advertising Effectiveness are the most important variables affecting demand. A design that meets the needs of the target market and is priced within their spending limits should be a good sales performer. A weak design or too high a price will result in a significant reduction in demand relative to market potential.
+
+Advertising is also very important because it is necessary to create awareness of a brand and its want-satisfying capability for the end-user. Even a good design with an acceptable price cannot achieve its full potential without solid advertising support.
+
+You can influence demand by your Sales management. Brand Selection, Pricing, Sales Order Priority and Sales Force Management can have an incremental effect on demand. A top sales order priority and sales people with technical training could favorably help the sales of a brand by 20 percent to 40 percent. In addition, Price Rebates can provide a substantial short-term stimulant to demand.
+
+You have complete flexibility to adjust your sales force by metropolitan market. You can adjust the total number of salespeople and the relative emphasis they place on different segments.
+
+When allocating your sales people, the first number entered is the total pool of staff available. Subsequent numbers determine the number of people who will be trained for either specific market segments or support. Specialized people will spend 70% of their time either selling to a specific market or performing support, whichever the case may be. The remaining 30% will be spent selling to all segments evenly. Unassigned sales people will divide their time selling to any and every one and are less efficient in sales to any particular market segment but are more likely to meet needs you may not have planned for.
+
+Brand Selection Back to chapterBack to contents
+One of your most important sales outlet decisions is the selection of the brands to be sold. If you do not offer what your customers want, they will not visit your stores or a website.
+
+Mechanics: Essentially, the Brand Selection decision is the specification of which brands will be sold through your sales outlets. Any brand designated for sale must also be given a brand price and assigned a sales priority.
+
+Be careful about moving brands into and out of a market. Brand loyalty increases the longer a particular brand is sold. This loyalty is lost if you remove the brand for even a single quarter.
+
+It is important not to overfill your store with brands. Each store is approximately 4300 square feet and needs to accommodate a display area for your bikes, a service area, a sales counter, and an area to measure and fit a bike. Overfilling this space will overwhelm the customers, resulting in a reduction in sales. Each store can hold a maximum of 20 brands, however filling your store with this many brands will likely result in lost sales.
+
+Brand Price Back to chapterBack to contents
+All sales to the end-users are through your sales channels. You must establish a sales price for each brand. When setting the price, you must consider:
+
+Cost of Production and operations - for each brand, you are given the value of Production Cost. This cost encompasses all the expenses related to a number of units sold.
+Price Elasticity - how price sensitive is your target market?
+Competitive Prices - what price are your competitors going to charge?
+Price Elasticity Back to chapterBack to contents
+Your pricing decision should also consider what the market will bear. All segments are responsive to lower prices. However, some are less sensitive than others. To some segments, a ten percent difference in price will have little bearing on demand. In other cases, the difference could cause a substantial switch from one brand to another.
+
+It is very important to test and know the Price Elasticity (sensitivity) of your target segments. This knowledge will help you to decide whether to use penetration pricing (deep price cuts), Price Rebates, or skim-the-cream pricing (premium prices).
+
+In addition to segment-specific price sensitivity, it is believed that the total market will expand as prices drop. Thus, as your prices drop, expect more potential customers to shift into an active buying mode. The rate at which customers enter the market as prices drop will vary by market segment.
+
+Competitive Prices Back to chapterBack to contents
+The final consideration in setting prices is the action of your competitors. If they price below you, they can expect a larger share of the market, all other things being equal. The size of this brand switching will be dependent upon the sensitivity of the segment to pricing issues and the size of the difference.
+
+Keep in mind that your firm will develop a company price image. If your firm's average price is below the competition, the price differential should help in generating more demand and taking business away from your competition.
+
+You should also recognize that this price sensitivity extends to your own product line. Your lower-priced models will be more attractive than your higher-priced brands for any given market segment. Even if no other competitor is in your sales area, your brands will compete with each other for market share.
+
+Again, test the market's sensitivity to prices. Also, determine if the added sales volume is worth the decline in gross margin due to the lower price.
+
+As a planning tool, you might wish to prepare a price worksheet for each brand you carry. The worksheet would include the identity of the target market, suggested brand price, price sensitivity of the target market, predicted price judgment, brand prices of comparable competing brands, and a breakdown of your direct variable costs, and advertising.
+
+It would also include a sales volume estimate and a total profit contribution (profit margin * sales volume) for each brand. This worksheet should help you to visualize the different variables affecting your pricing decision and ensure that they are a conscious part of the decision. It will also be a good resource for your marketing plan and to use in meetings with the chairperson of the board.
+
+Note: The price judgment ratings are based on the final price after any rebates.
+
+Price Rebate Back to chapterBack to contents
+Price rebates are a short-term stimulant to market demand. Rebates are popular amongst price sensitive customers and, as a consequence, they are good traffic builders for sales outlets. Among price sensitive customers, rebates create excitement and encourage them to buy immediately. This inclination can be reflected in the price judgments. A brand with a rebate can achieve a better price judgment compared to a brand with regular price cut of the same amount.
+
+But, this does not work with the price inelastic segments. For these customers, a rebate suggests something negative, like the store is trying to unload unwanted inventory. Price judgments can actually get worse when you offer rebates to these segments. Therefore, consider using rebates with the price sensitive segments and avoid them with the value-driven segments.
+
+A down side of a rebate program is that you may be borrowing from future sales. Some of your customers may have been intending to buy at a later date. Rebates simply encourage them to act sooner. In addition, a large proportion of the customers would have made their purchases without a rebate. Also, while your price image will be improved in the quarter of the sale, it will deteriorate in the quarter the rebate is removed, as customers perceive a price increase.
+
+Rebates in the order of 50 to 100 are typical for price-sensitive customers.
+
+You can expect that 50 percent of all sales made during the quarter in which a rebate of this magnitude is offered will result in a rebate request. The farther that you increase the rebates above this range, the more likely the customers are to claim the rebates.
+
+Disproportionally large rebates will also affect customers' perception of price. In other words, if you price a product too high and also offer a large rebate on it, you should not expect your customers to perceive the actual price they pay as the full price minus the rebate. Your customers will have to come up with the cash to cover the full price before they receive the rebate later. Buyers will tend to ignore unusually high rebates and will be discouraged from making a purchase if the price seems too high.
+
+Sales Order Priority Back to chapterBack to contents
+Once you have decided which brands to carry in your showroom, you must then decide on the sales priority for each brand. The sales priority is a clear indicator to the sales staff regarding management's interest in selling one brand over the other.
+
+The brand given the number one priority will be pushed the hardest by the sales people. A brand given a number two priority would be promoted hard by the sales staff, but not as hard as the number one brand. A brand with a number 10 priority would be almost ignored by the sales staff. Customers would have to come looking for the brand and be determined to not accept any substitutions.
+
+The sales order priority will also be used in establishing the shelf locations in your showroom. A good shelf location will improve the visibility of the brand, encourage closer inspection, and may even stimulate impulse buying. Thus, the same brand will sell in larger quantities in a high-traffic location near the front of the showroom than in an out-of-the-way spot in the back of the showroom, all other things being equal.
+
+Sales Force Management Back to chapterBack to contents
+Your next Sales Channel decision is sales force management. You must decide the Number of Sales People to employ in each sales outlet, and where to focus their efforts.
+
+It is critical to hire and place sales people based upon the demand and profit potential of each market and segment.
+
+Number of Salespeople Back to chapterBack to contents
+The first decision to make in Sales Force Management is how many salespeople to employ in each city. Demand is thought to be directly affected by the number of salespeople that you place in a market. As you add salespeople, unit sales will increase, but at a decreasing rate.
+
+The service people will spend 70% of their time servicing the products and 30% in sales. Their role is to enhance sales to segments concerned with after-sale service for their products. As the demand from sales outlets grows, so should the number of service people and overall sales people. One service person in each sales outlet may be sufficient to begin with, but as sales rise, more than one service person will probably be needed to be able to adequately provide after sales support and satisfy the customer needs.
+
+There is no financial penalty for adjusting the size of your sales force from quarter to quarter. The turnover in the industry is sufficiently great that you can hire and fire salespeople as you see fit. The one limitation to this decision is that the market is a little sensitive to a decrease in the sales staff. From the customer's viewpoint, a reduction in staff generally indicates a drop in service.
+
+There are practical limits to the number of salespeople you can employ in a market. After a while, they begin to compete against each other and overwhelm customers. This can create an uncomfortable environment for both the sales staff and customers, decreasing sales. The size of your sales outlet will only accommodate 20 sales/service people.
+
+In the early stages of the market, you can assume that each sales person will sell between 30 and 70 units per quarter. Initially, a conservative approach would be to estimate that each salesperson sells 50 units in a given quarter.
+
+Caution: These starting figures for demand estimates are based upon the averages. Demand can be less or greater than the estimates given here if your marketing efforts are well below or above the average.
+
+As you gain experience in the market and refine your marketing decisions, the number of sales per salesperson will increase and the sales curve will likely move upward. Later, when you introduce new technology and substantially invest in advertising and sales training, the curve is likely to shift upwards again. Just how high the curve will move will depend on the size of the target segment and the marketing decisions made by you and your competition.
+
+As you can ascertain from this discussion, the number of units sold per salesperson is a critical number to watch. Be certain to compute this figure for each segment in each city and compare it to your competition's estimate in order to gauge the effectiveness of your marketing efforts.
+
+Target Market Specialty Back to chapterBack to contents
+One particularly important dimension of the sales force decision stems from their market training. You can favorably influence the sales of a brand by having some of the sales staff receive special training on specific segment's needs.
+
+The training program has a modest cost per salesperson. With this training, your salespeople will be more knowledgeable about a particular segment's needs, more persuasive in closing the deal, and provide better service to the customer after the sale is complete.
+
+The designation of a Target Market Specialty will also direct the sales person. If a sales person has received training to specialize in the Speed segment, then he or she will look for customers that fit the profile of the Speed segment and largely ignore the other segments.
+
+Overall, the specialized sales person can still be expected to support all the brands carried, but he or she will be targeted toward a specific segment. In any case, the more sales people you assign to specific segments, the more effective your total marketing effort will be, versus your competition.
+
+A second important option of the target market decision is whether to allocate one or more sales people to a service role. Certain segments are concerned about after-sale service. They want to have someone available to help with flat tires and tune-ups, should problems develop. You can enhance your sales to these segments by assigning sales people to the service role. The benefit is spread across all segments concerned about after-sale service. These service personnel do little direct selling; however, they do enhance the selling potential of your other sales personnel.
+
+H. Accounting Back to contents
+Activity Based Costing (ABC)
+Profitability of Marketing Division
+The accounting information should help you understand the importance of evaluating the profitability of your business decisions through the use of Activity Based Costing. You should learn to allocate revenues and expenses to their proper activity in order to assure the profitability of your brand and sales channel decisions.
+
+Review the following topic to help make wise decisions regarding your accounting and financial planning:
+
+Activity Based Costing
+Profitability of Marketing Division
+Activity Based Costing (ABC) Back to chapterBack to contents
+Given the difficulty of starting up a new business, it is imperative to know precisely the profitability of each brand. Activity Based Costing is a valuable tool for evaluating the contribution of each market activity to the financial vitality of the firm. The objective is to assign each activity and cost related to the creation of a sale to the brand or market that generated the sale.
+
+For example, suppose 300,000 was spent in total advertising. Should this cost be charged to the overhead of the firm as a selling expense? If yes, then every unit sold would effectively carry the same advertising burden. But, what if we know that 200,000 was spent on Brand A and 100,000 was spent on Brand B.
+
+Wouldn't it make more sense to charge Brand A with the greater advertising burden? We can similarly charge each brand with its relevant demand creating costs (such as advertising, rebates, R&D, etc.) as well as the cost to produce it. When all of the revenues and costs are properly allocated, we can discover which brands are making the greatest contribution to the profitability of the firm.
+
+As part of their support function, your accountants have prepared an ABC analysis on each brand. At the very least, this analysis will help you to evaluate the profitability of all of your demand generating activities. However, it will not tell you what to do. You may elect to retain a brand that has a low contribution to profits if it helps you to accomplish other objectives, such as having a full product line or greater economies in purchasing components for all brands.
+
+Or you may realize that it will take time to build the business and a new brand or market may not become profitable for a few quarters. Regardless of the reason, if you are losing money, you should know it. If you are making more money on some brands, then perhaps you should reallocate some resources to take further advantage of these gains.
+
+Profitability of Marketing Division Back to chapterBack to contents
+The fundamental goal of your Marketing Division is to earn a profit for Corporate Headquarters. Each quarter, your Marketing Division will report its Net Profit to Headquarters. To determine whether your division was profitable in a particular quarter, you will compare your Gross Margin (Revenues - Rebates - Cost of Goods Sold) with your Operating Expenses. If your Gross Margin is greater than your operating expenses, you have generated a profit.
+
+It is normal to lose money during the test market phase of the business. Demand will be low until people learn about your firm and products. Also, the firm will incur substantial startup expenses in the early quarters. Finally, unit production costs will be high due to low production volumes.
+
+I. Balanced Scorecard Back to contents
+The balanced scorecard is the most important measure of your total performance. It provides a single number that can be compared between companies. As such, it is the main indicator for evaluating your performance in the market. It becomes available after the first quarter of sales.
+
+The cumulative balanced scorecard provides the average of your performance over the past 4 quarters at most. It smooths out any spikes or dips in your performance and therefore reflects your ability to perform, not in one particular quarter, but over time.
+
+
+A Balanced Scorecard is used to measure the marketing division's performance. As the marketing manager, you will be measured on the division's financial performance, market performance, and marketing effectiveness.
+
+To become a top manager, you must do well in all areas. Here is how the performance criteria are computed.
+
+Total Performance = ( Financial Performance + Market Performance + Marketing Effectiveness ) / 3
+
+
+Financial Performance
+measures how well you have been able to create profits for Corporate Headquarters. A positive number is always desired and the larger the better. The net profit for the division is used to compute financial performance.
+
+Corporate Headquarters expects your division to earn at least 4,000,000. Thus your score is based upon what percent of 4,000,000 the division has earned this quarter.
+
+Financial Performance = Net Profit for Division / 4,000,000 * 100
+Net Profit for Division = Operating Profit + Other Income - Other Expenses
+Operating Profit = Gross Profit - Total Expenses
+
+
+Market Performance
+is a measure of how well you are able to create demand in your primary and secondary target segments. The firm's market share in your two selected target segments is used to measure this demand creation ability. The score ranges from 0 to 200 and will depend upon the number of competitors. A good score would be greater than 100.
+
+Market Performance = Market Share in Primary Segment + Market Share in Secondary Segment
+
+
+Marketing Effectiveness
+is a measure of how well you have been able to satisfy the needs of the customers as measured by the quality of your brands and ads. Customer perceptions of the firm's brands and ads in its primary and secondary segments are used to measure customer satisfaction. The two scores are then added to obtain the indicator for marketing effectiveness. The score ranges from 0 to 100. A good score would be greater than 80.
+
+Marketing Effectiveness = ( Average Brand Judgment + Average Ad Judgment ) / 2
+Average Brand Judgment = ( Highest Brand Judgment in Primary Segment + Highest Brand Judgment in Secondary Segment ) / 2
+Average Ad Judgment = ( Highest Ad Judgment in Primary Segment + Highest Ad Judgment in Secondary Segment ) / 2
+
+J. Glossary Back to contents
+Brand Components
+Fatal Errors
+Brand Components Back to chapterBack to contents
+Essentials
+Base components include the chain, cables, wheel rims and spokes, axles, nuts, bolts and assorted parts to complete bicycle assembly.
+Bike Frame
+Relaxed comfortable design for easy riding. The frame is designed with the rider's comfort in mind, including higher-mounted handlebars for a more upright riding position.
+Rugged agile design for rough terrains. The frame is sturdy and offers extra clearance for wider tires and a longer wheelbase.
+Sleek aerodynamic design for speed. The frame boasts skinny, airfoil-shaped tubes and internal cable routing to decrease air resistance.
+Carbon fiber material
+Standard carbon fiber is lightweight, strong, and resistant to corrosion, a good choice for any bicycle rider.
+Enriched carbon fiber is lighter and stronger than standard carbon fiber, providing a competitive edge for any rider.
+Tires
+High grip mountain tires feature a tread pattern with widely spaced, deep individual knobs. These knobs allow the tires to dig deeper into mud/dirt and to shed debris while spinning.
+Super traction mountain tires feature a wider tire and higher threads per inch (TPI) than other tires offering the best traction on the market.
+Hybrid bike tires are designed with a specific tread for performing on both pavement and off-road conditions. There is a central strip of smooth rubber for providing good speed on roads, with larger knobs toward the edges for digging into loose soil or sand.
+Hybrid - cushion tires make riding more comfortable for casual riders. These tires are wider, have better grip, and do more to deaden vibration to make the ride more comfortable.
+Fast racing tires offer higher threads per inch (TPI) for a faster ride and increased puncture resistance.
+Sleek, very fast racing tires are designed with dual compounds. There is a harder compound center for speed and a softer compound on the shoulders for cornering grip. High thread counts also provide exceptional durability and speed.
+Brakes
+Standard brakes are the most basic brakes on the market.
+Precision brakes are engineered for better braking control, reduced weight, and good airflow.
+Standard disc brakes deliver superior stopping power in most weather conditions. Disc brakes are heavier and more complicated to maintain than other brake types.
+Handlebars
+Basic straight handlebars are relatively simple, narrow bars. They are designed for strength and control on difficult surfaces/terrains and offer more maneuverability through tight spaces. They cause the rider to lean forward which distributes the weight evenly and puts less pressure on the seat, a benefit in long rides.
+Comfort straight handlebars have a small bend in the bar towards each handgrip that causes the rider to sit in a more upright position. For casual riders, this can make biking more comfortable.
+Power straight handlebars are wider and stronger than the basic straight bar. They can withstand the forces generated in powering over obstacles, maneuvering during difficult descents and lifting the front to clear trail obstacles. The wider bars offer more stability, however trailside tree clearance is reduced.
+Carbon fiber riser handlebars are raised and swept back just enough to provide ergonomic comfort and greater stability and maneuverability. There is also less hand and arm fatigue due to the carbon fiber's ability to dampen road vibrations.
+Basic drop down handlebars allow the rider to lean forward to assume a more aerodynamic position that reduces drag. The handlebars also offer a variety of hand positions (top bar and rounded bottom) that enable the rider to change hand and body positions during long rides, preventing fatigue.
+Carbon fiber, aerodynamic, drop down handlebars have a flattened, airfoil top that reduces drag and fits the hand for added comfort when changing positions. The carbon fiber material reduces weight and has just enough flex to dampen vibrations and hand fatigue.
+Gears
+The 7-speed option (1x7) has one chain ring or gear on the front and a 7-speed set of gears on the back. It is sufficient for the flat or gently rolling terrain in most cities.
+The 14-speed option (2x7) has two chain rings on the front of the bicycle and a 7-speed rear set of gears. It offers a wide range of terrain and speed options. It is good for road biking but not for tough mountain climbs.
+The 24-speed option (3x8) has three chain rings on the front of the bicycle and an 8-speed rear cassette. This bike allows the rider to ride comfortably at different speeds across varying terrains. Bicycles with more and higher gears allow more variety for the rider to find his/her preferred pedaling speed.
+Seat
+The polymer gel, all-purpose seat has a rubbery, flesh-like consistency that provides good molding and shock absorbing capabilities for any rider.
+The polymer gel, comfort seat offers varying gel density for more relief and support as well as slots and grooves through the nose section, further increasing comfort.
+The polymer gel, racing seat offers polymer gel comfort with lighter rails and an aerodynamic shape to improve speed and performance while maintaining comfort for the rider.
+Accessories
+The reflectors improve visibility from all directions, especially in low light. They are less attractive to those that want an elite, stylish look.
+Performance bike computer provides ride time, distance, speed, GPS, and altitude on a convenient touchscreen. It can also wirelessly collect data from biometric sensors that measure heart rate, calorie burn, etc. and share information with smart phones.
+The electric motor system includes a rear hub motor and a battery that is embedded within the frame tubes. The system provides the rider with pedal assistance that can traverse almost any hilly terrain and run up to 32 kph (20 mph) with a range of 80 to 120 kilometers (50 to 75 miles).
+Carriers
+Attractive plastic basket is a small, woven plastic basket used to hold small packages.
+Large, mesh, folding, tote basket is made of flexible plastic. It is light weight, can be detached to carry things, and can be folded down to a smaller size when not in use.
+Suspension/shock absorbers
+Front shock absorbers are designed to soften the impact of rough terrain for a more comfortable ride. They are easily adjustable for any weight and terrain.
+Full suspension shock absorbers (front and back) offer more comfort, control, and speed in rough terrain.
+Decals
+Colorful, thin brushstroke decals are designed to highlight the classy look of dark carbon fiber.
+Bright, colorful decals are styled to fit the image of each segment and frame.
+Fatal Errors Back to chapterBack to contents
+As you begin to compete in the Marketplace, you will find that your auditor will impose a number of limitations on your decisions. These constraints will be listed in the Final Check link at the end of your decisions. Unless you correct all fatal errors, you will not be able to wrap up your decisions.
+
+The following table indicates the limitations that you can expect in each quarter of play. These constraints will keep you in a safe zone until you get more experience. As you will note, in later quarters, the constraints imposed by the auditor will gradually be released.
+
+Fatal errors overview over all game quarters
+ 	Quarter 1	Quarter 2	Quarter 3	Quarter 4	Quarter 5	Quarter 6
+Maximum number of target segments	 	1	1	 	 	 
+Maximum number of brands for sale	 	1	2	20	20	20
+Minimum brand price minus rebate	 	400	400	400	400	400
+Maximum brand price	 	2,100	2,100	2,100	2,100	2,100
+Maximum number of ad designs	 	1	2	25	25	25
+Maximum advertising expenditures	 	20,000	40,000	 	 	 
+Maximum number of new sales outlets	1	1	1	 	 	 
+Maximum number of sales people per store	 	7	7	20	20	20
